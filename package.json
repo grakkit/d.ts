@@ -1,0 +1,10 @@
+{
+  "name": "jdts",
+  "description": "Converts the paper javadocs into usable TS definition code.",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "10.1.0"
+  }
+}
