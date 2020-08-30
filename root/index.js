@@ -1,4 +1,4 @@
-const { writeFileSync, mkdirSync, existsSync } = require('fs');
+const { writeFileSync, mkdirSync, existsSync, readFileSync } = require('fs');
 const { origin, debug } = require('./../options.json');
 
 const __ = {
@@ -37,13 +37,11 @@ const __ = {
       return [ ns, `${__.syntax.desc(desc)}export ${header} {\n${props}\n}\n` ];
    },
    save: (dict) => {
-      const types = [];
-      const events = [];
-      const classes = [];
-
       const pre = "import * as classes from './classes';\nexport class ";
-      types.push(`${pre}types {`);
-      events.push(`${pre}events {`);
+
+      const types = [ `${pre}types {` ];
+      const events = [ `${pre}events {` ];
+      const classes = [ readFileSync('./bootstrap.d.ts').toString() ];
 
       dict = dict.map((entry) => {
          if (entry.length !== 3) return;
@@ -116,6 +114,8 @@ const __ = {
             method = method.replace('(', `${type.split('>')[0]}>(`);
             type = type.split('>').slice(1).join('>');
          }
+         method = method.replace(/(\? extends )/g, '');
+         type = type.replace(/(\? extends )/g, '');
          method = method.replace(/( super [^>]*)(>{1})/g, '>');
          type = type.replace(/( extends [^>]*)(>{1})/g, '>');
          while (type.startsWith('>')) {
