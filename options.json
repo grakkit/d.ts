@@ -1,0 +1,11 @@
+{
+   "debug": false,
+   "origin": "https://papermc.io/javadocs/paper/1.16",
+   "config": {
+      "show": false,
+      "webPreferences": {
+         "webSecurity": false,
+         "nodeIntegration": true
+      }
+   }
+}

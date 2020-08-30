@@ -1,12 +1,12 @@
 const { app, BrowserWindow } = require('electron');
+const { config } = require('./options.json');
+
 app.on('ready', () => {
-   const crawler = new BrowserWindow({
-      show: false,
-      webPreferences: {
-         webSecurity: false, // allows cross-origin requests,
-         nodeIntegration: true
-      }
-   });
-   crawler.loadFile('root/index.html');
-   crawler.webContents.openDevTools({ mode: 'detach' });
+   const win = new BrowserWindow(config);
+   win.loadFile('root/index.html');
+   win.webContents.openDevTools({ mode: 'detach' });
+});
+
+app.on('window-all-closed', () => {
+   process.exit();
 });
