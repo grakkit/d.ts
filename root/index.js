@@ -1,5 +1,5 @@
 const { writeFileSync, mkdirSync, existsSync, readFileSync } = require('fs');
-const { origin, debug } = require('./../options.json');
+const { origin, target, debug } = require('./../options.json');
 
 const __ = {
    chain: (base, modifier) => {
@@ -68,10 +68,10 @@ const __ = {
       types.push('}');
       events.push('}');
 
-      existsSync('dict') || mkdirSync('dict');
-      writeFileSync('dict/types.d.ts', types.join('\n'));
-      writeFileSync('dict/events.d.ts', events.join('\n'));
-      writeFileSync('dict/classes.d.ts', classes.join('\n'));
+      existsSync(target) || mkdirSync(target);
+      writeFileSync(`${target}/types.d.ts`, types.join('\n'));
+      writeFileSync(`${target}/events.d.ts`, events.join('\n'));
+      writeFileSync(`${target}/classes.d.ts`, classes.join('\n'));
 
       if (!debug) window.close();
    },
@@ -105,7 +105,7 @@ const __ = {
       },
       member: (items) => {
          let info = items[2] ? items[2].innerText : '';
-         if (info.split('\n').includes('Deprecated.')) return '';
+         // if (info.split('\n').includes('Deprecated.')) return '';
          let desc = __.syntax.desc(info);
          if (desc) desc = `    ${desc}`;
          let method = __.syntax.method(items[1].innerText);
