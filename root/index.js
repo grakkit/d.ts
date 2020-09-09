@@ -39,7 +39,7 @@ const __ = {
    save: (dict) => {
       const pre = "import * as classes from './classes';\nexport class ";
 
-      const types = [ `${pre}types {` ];
+      const types = [ `${pre}types {`, '    static type (name: string): any;' ];
       const events = [ `${pre}events {` ];
       const classes = [ readFileSync('./bootstrap.d.ts').toString() ];
 
@@ -48,7 +48,11 @@ const __ = {
          let [ path, ns, code ] = entry;
          classes.push(code);
          ns = ns.split('<')[0];
-         types.push(`    static type (name: '${path}'): typeof classes.${ns};`);
+         if (code.includes('export interface')) {
+            types.push(`    static type (name: '${path}'): classes.${ns};`);
+         } else {
+            types.push(`    static type (name: '${path}'): typeof classes.${ns};`);
+         }
          if (ns.endsWith('Event')) {
             events.push(
                [
