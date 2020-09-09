@@ -6,7 +6,7 @@
 
 export type bridge$consumer<X> = (x: X) => any;
 export interface bridge$iterable<X> {
-   [Symbol.iterator](): Iterator<X>;
+   [Symbol.iterator](): IterableIterator<X>;
 }
 
 ///////////////////////////////////////////////////////////////////////////////

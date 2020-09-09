@@ -198,3 +198,5 @@ __.download('allclasses-noframe.html', ($a) => {
       });
    });
 });
+
+// todo: document enum methods
