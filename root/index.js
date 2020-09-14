@@ -1,5 +1,5 @@
 const { writeFileSync, mkdirSync, existsSync, readFileSync } = require('fs');
-const { origin, target, debug } = require('./../options.json');
+const { origin, target, debug, table } = require('./../options.json');
 
 const __ = {
    chain: (base, modifier) => {
@@ -20,13 +20,13 @@ const __ = {
       const dep = __.from(root, 'div.description div.deprecationBlock');
       if (dep.length > 0) return [];
 
-      const inf = __.from(root, 'div.description pre')[0].innerText.split('\n');
-      if (inf.includes('@Deprecated')) return [];
-
       const title = __.from(root, 'h2.title')[0].innerText;
       if (title.startsWith('Annotation')) return [];
       const camel = `${title[0].toLowerCase()}${title.slice(1)}`;
       const ns = camel.split(' ')[1].replace(/\./g, '$');
+
+      let inf = __.from(root, 'div.description pre')[0].innerText.split('\n');
+      while (!inf[0].toLowerCase().includes(title.toLowerCase())) inf = inf.slice(1);
 
       const header = __.syntax.header([ camel, ...inf.slice(1) ].join(' '));
       const desc = (__.from(root, 'div.description div')[0] || {}).innerText;
@@ -37,17 +37,17 @@ const __ = {
       return [ ns, `${__.syntax.desc(desc)}export ${header} {\n${props}\n}\n` ];
    },
    save: (dict) => {
-      const pre = "import * as classes from './classes';\nexport class ";
-
-      const types = [ `${pre}types {`, '    static type (name: string): any;' ];
-      const events = [ `${pre}events {` ];
-      const classes = [ readFileSync('./bootstrap.d.ts').toString() ];
+      const types = [ readFileSync('./bootstrap/types.d.ts').toString() ];
+      const events = [ readFileSync('./bootstrap/events.d.ts').toString() ];
+      const classes = [ readFileSync('./bootstrap/classes.d.ts').toString() ];
 
       dict = dict.map((entry) => {
          if (entry.length !== 3) return;
          let [ path, ns, code ] = entry;
          classes.push(code);
          ns = ns.split('<')[0];
+         // monkey patch for java 11
+         // path = path.split('.').slice(2).join('.');
          if (code.includes('export interface')) {
             types.push(`    static type (name: '${path}'): classes.${ns};`);
          } else {
@@ -78,11 +78,15 @@ const __ = {
    syntax: {
       any: (text) => {
          text = text.replace(/\?/g, 'X');
+         text = text.replace(/\u200b/g, '');
+         // monkey patch for java 11
+         // text = text.replace('>>,T', '>,T');
          return text;
       },
       desc: (text) => {
          if (!text) return '';
          text = text.replace(/(\xa0)/g, '');
+         text = text.replace(/(\/)/g, '\\/');
          if (text.startsWith('\n')) text = text.slice(1);
          if (text.endsWith('\n')) text = text.slice(0, -1);
          text = text.replace(/(\n){1}/g, ' ');
@@ -105,7 +109,6 @@ const __ = {
       },
       member: (items) => {
          let info = items[2] ? items[2].innerText : '';
-         // if (info.split('\n').includes('Deprecated.')) return '';
          let desc = __.syntax.desc(info);
          if (desc) desc = `    ${desc}`;
          let method = __.syntax.method(items[1].innerText);
@@ -122,10 +125,17 @@ const __ = {
          type = type.replace(/(\? extends )/g, '');
          method = method.replace(/( super [^>]*)(>{1})/g, '>');
          type = type.replace(/( extends [^>]*)(>{1})/g, '>');
-         while (type.startsWith('>')) {
-            method = method.replace('(', `>(`);
-            type = type.slice(1);
+         while (type.startsWith('>') || type.startsWith(',')) {
+            if (type.startsWith('>')) {
+               method = method.replace('(', `>(`);
+               type = type.slice(1);
+            }
+            if (type.startsWith(',')) {
+               method = method.replace('(', `${type.split('>')[0]}>(`);
+               type = type.split('>').slice(1).join('>');
+            }
          }
+         type = type.replace(/ super ./g, '');
          return `${desc}    ${method}: ${type}`;
       },
       method: (text) => {
@@ -137,12 +147,16 @@ const __ = {
          args = args.map((arg) => {
             if (arg === '') return '';
             let [ type, param ] = arg.split('\xa0');
+            if (param === 'in') param = '_in';
             if (param === 'with') param = '_with';
             if (param === 'function') param = '_function';
             if (type.endsWith('...')) {
                type = `${type.slice(0, -3)}[]`;
                param = `...${param}`;
             }
+            type = type.replace(/(\? super )/g, '');
+            type = type.replace(/(\? extends )/g, '');
+            type = type.replace(/( super [^>]*)(>{1})/g, '>');
             type = type.replace(/( extends [^>]*)(>{1})/g, '>');
             return `${param}: ${__.syntax.type(type)}`;
          });
@@ -160,10 +174,13 @@ const __ = {
          return text;
       },
       enum: (root, ns) => {
-         const ref = __.from(root, 'a[name="enum.constant.summary"]')[0];
+         const ref = __.from(root, 'a[id="enum.constant.summary"],a[name="enum.constant.summary"]')[0];
+         if (!ref) return '';
          let items = __.from(ref.parentElement, 'span.memberNameLink');
          items = items.map((item) => __.syntax.constant(item, ns));
          items = __.syntax.props(items);
+         const extra = __.syntax.class(root);
+         if (extra) items += `\n${extra}`;
          return items;
       },
       path: (text) => {
@@ -180,8 +197,8 @@ const __ = {
          return `${desc}    ${member}`;
       },
       class: (root) => {
-         const ref = __.from(root, 'a[name="method.summary"]')[0];
-         if (!ref) return [];
+         const ref = __.from(root, 'a[id="method.summary"],a[name="method.summary"]')[0];
+         if (!ref) return '';
          let items = __.from(ref.parentElement, 'tr[id]');
          items = items.map((item) => [ ...item.children ]);
          items = items.map(__.syntax.member);
@@ -202,5 +219,3 @@ __.download('allclasses-noframe.html', ($a) => {
       });
    });
 });
-
-// todo: document enum methods
