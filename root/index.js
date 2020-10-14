@@ -110,14 +110,33 @@ const tools = {
 
 const engine = {
    addons: (nodes) => {
+      let arrow = 0;
       let output = '';
       for (const node of nodes) {
-         if (node.tagName === 'A') {
-            output += ` ${engine.short(node)},`;
-         } else if ([ '\nextends ', '\nimplements ' ].includes(node.textContent)) {
+         if (node.textContent === '<') {
             if (output.endsWith(',')) output = output.slice(0, -1);
-            output += ` ${node.textContent.slice(1, -1)}`;
+            output += node.textContent;
+            ++arrow;
+         } else if (node.textContent[0] === '>') {
+            if (output.endsWith(',')) output = output.slice(0, -1);
+            output += node.textContent.trimEnd();
+            --arrow;
+         } else if (node.textContent[0] === '<') {
+            if (output.endsWith(',')) output = output.slice(0, -1);
+            output += node.textContent.trimEnd();
          }
+         if (arrow === 0) {
+            if (node.tagName === 'A') {
+               if (!output.endsWith(' ')) output += ' ';
+               output += `${engine.short(node)},`;
+            } else if ([ '\nextends ', '\nimplements ' ].includes(node.textContent)) {
+               if (output.endsWith(',')) output = output.slice(0, -1);
+               output += ` ${node.textContent.slice(1)}`;
+            }
+         } else if (node.tagName === 'A') {
+            output += `${engine.short(node)},`;
+         }
+         output = output.replace(/\n/g, ' ');
       }
       if (output.endsWith(',')) output = output.slice(0, -1);
       while (!output.startsWith(' extends') && !output.startsWith(' implements') && output.length > 0) {
@@ -213,7 +232,7 @@ const engine = {
       let addons = engine.addons(tools.from(root, 'div.description pre')[0].childNodes);
       addons = addons.split(' ').filter((segment) => !segment.includes('@')).join(' ');
       const comment = engine.comment(tools.from(root, 'div.description div')[0]);
-      const header = `export ${category === 'enum' ? 'interface' : category} ${short}${label}${addons}`;
+      const header = `export ${category === 'enum' ? 'class' : category} ${short}${label}${addons}`;
       let properties = [];
       if (mode === 'bootstrap') {
          switch (short) {
