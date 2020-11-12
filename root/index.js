@@ -92,7 +92,7 @@ const tools = {
                [
                   `    static event (`,
                   `        name: '${long}',`,
-                  `        ...listeners: ((event: classes.${short}) => {})[]`,
+                  `        ...listeners: ((event: classes.${short}) => any)[]`,
                   `    ): void;`
                ].join('\n')
             );
