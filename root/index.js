@@ -43,7 +43,7 @@ const tools = {
       return [ ...context.querySelectorAll(selector) ];
    },
    init: () => {
-      const dict = [];
+      const dict = (globalThis.dict = []);
       tools.chain({ bootstrap, standard }[mode], (list, nextSource) => {
          if (list.length > 0) {
             context.page = list[0];
@@ -129,7 +129,7 @@ const engine = {
             if (node.tagName === 'A') {
                if (!output.endsWith(' ')) output += ' ';
                output += `${engine.short(node)},`;
-            } else if ([ '\nextends ', '\nimplements ' ].includes(node.textContent)) {
+            } else if (node.textContent.startsWith('\nextends ') || node.textContent.startsWith('\nimplements ')) {
                if (output.endsWith(',')) output = output.slice(0, -1);
                output += ` ${node.textContent.slice(1)}`;
             }
@@ -222,6 +222,8 @@ const engine = {
       }
    },
    main: (root) => {
+      if (tools.from(root, 'div.description div.deprecationBlock').length > 0) return null;
+      if (tools.from(root, 'div.description pre')[0].innerText.split('\n').includes('@Deprecated')) return null;
       const category = tools.from(root, 'h2.title')[0].innerText.split(' ')[0].toLowerCase();
       if (category === 'annotation') return null;
       let long = context.path.slice(0, -5).replace(/(\/)/g, '.');
@@ -247,6 +249,7 @@ const engine = {
       category === 'enum' && properties.push(...engine.constants(root, short));
       category === 'class' && properties.push(...engine.constructors(root));
       properties.push(...engine.methods(root));
+      properties = properties.filter((line) => !line.startsWith('/**Deprecated'));
       properties = properties.length ? `\n${properties.map((line) => `    ${line};`).join('\n')}\n` : '';
       return { short: short, long: long, code: `${comment.slice(0, -4)}${header} {${properties}}` };
    },

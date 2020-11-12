@@ -24,7 +24,6 @@ export class types {
     static type (name: 'javax.lang.model.util.AbstractElementVisitor9', ...args: any[]): typeof classes.jlmuAbstractElementVisitor9;
     static type (name: 'java.util.concurrent.AbstractExecutorService', ...args: any[]): typeof classes.jucAbstractExecutorService;
     static type (name: 'java.nio.channels.spi.AbstractInterruptibleChannel', ...args: any[]): typeof classes.jncsAbstractInterruptibleChannel;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.AbstractJSObject', ...args: any[]): typeof classes.njnasAbstractJSObject;
     static type (name: 'javax.swing.tree.AbstractLayoutCache', ...args: any[]): typeof classes.jstAbstractLayoutCache;
     static type (name: 'javax.swing.tree.AbstractLayoutCache.NodeDimensions', ...args: any[]): typeof classes.jstANodeDimensions;
     static type (name: 'java.util.AbstractList', ...args: any[]): typeof classes.juAbstractList;
@@ -88,7 +87,6 @@ export class types {
     static type (name: 'java.lang.reflect.AccessibleObject', ...args: any[]): typeof classes.jlrAccessibleObject;
     static type (name: 'javax.accessibility.AccessibleRelation', ...args: any[]): typeof classes.jaAccessibleRelation;
     static type (name: 'javax.accessibility.AccessibleRelationSet', ...args: any[]): typeof classes.jaAccessibleRelationSet;
-    static type (name: 'javax.accessibility.AccessibleResourceBundle', ...args: any[]): typeof classes.jaAccessibleResourceBundle;
     static type (name: 'javax.accessibility.AccessibleRole', ...args: any[]): typeof classes.jaAccessibleRole;
     static type (name: 'javax.accessibility.AccessibleSelection', ...args: any[]): classes.jaAccessibleSelection;
     static type (name: 'javax.accessibility.AccessibleState', ...args: any[]): typeof classes.jaAccessibleState;
@@ -106,15 +104,12 @@ export class types {
     static type (name: 'javax.security.auth.login.AccountExpiredException', ...args: any[]): typeof classes.jsalAccountExpiredException;
     static type (name: 'javax.security.auth.login.AccountLockedException', ...args: any[]): typeof classes.jsalAccountLockedException;
     static type (name: 'javax.security.auth.login.AccountNotFoundException', ...args: any[]): typeof classes.jsalAccountNotFoundException;
-    static type (name: 'java.security.acl.Acl', ...args: any[]): classes.jsaAcl;
     static type (name: 'java.nio.file.attribute.AclEntry', ...args: any[]): typeof classes.jnfaAclEntry;
-    static type (name: 'java.security.acl.AclEntry', ...args: any[]): classes.jsaAclEntry;
     static type (name: 'java.nio.file.attribute.AclEntry.Builder', ...args: any[]): typeof classes.jnfaABuilder;
     static type (name: 'java.nio.file.attribute.AclEntryFlag', ...args: any[]): typeof classes.jnfaAclEntryFlag;
     static type (name: 'java.nio.file.attribute.AclEntryPermission', ...args: any[]): typeof classes.jnfaAclEntryPermission;
     static type (name: 'java.nio.file.attribute.AclEntryType', ...args: any[]): typeof classes.jnfaAclEntryType;
     static type (name: 'java.nio.file.attribute.AclFileAttributeView', ...args: any[]): classes.jnfaAclFileAttributeView;
-    static type (name: 'java.security.acl.AclNotFoundException', ...args: any[]): typeof classes.jsaAclNotFoundException;
     static type (name: 'javax.swing.Action', ...args: any[]): classes.jsAction;
     static type (name: 'java.awt.event.ActionEvent', ...args: any[]): typeof classes.jaeActionEvent;
     static type (name: 'java.awt.event.ActionListener', ...args: any[]): classes.jaeActionListener;
@@ -162,23 +157,17 @@ export class types {
     static type (name: 'javax.lang.model.AnnotatedConstruct', ...args: any[]): classes.jlmAnnotatedConstruct;
     static type (name: 'java.lang.reflect.AnnotatedElement', ...args: any[]): classes.jlrAnnotatedElement;
     static type (name: 'java.lang.reflect.AnnotatedParameterizedType', ...args: any[]): classes.jlrAnnotatedParameterizedType;
-    static type (name: 'com.sun.javadoc.AnnotatedType', ...args: any[]): classes.csjAnnotatedType;
     static type (name: 'java.lang.reflect.AnnotatedType', ...args: any[]): classes.jlrAnnotatedType;
     static type (name: 'com.sun.source.tree.AnnotatedTypeTree', ...args: any[]): classes.csstAnnotatedTypeTree;
     static type (name: 'java.lang.reflect.AnnotatedTypeVariable', ...args: any[]): classes.jlrAnnotatedTypeVariable;
     static type (name: 'java.lang.reflect.AnnotatedWildcardType', ...args: any[]): classes.jlrAnnotatedWildcardType;
     static type (name: 'java.lang.annotation.Annotation', ...args: any[]): classes.jlaAnnotation;
     static type (name: 'java.text.Annotation', ...args: any[]): typeof classes.jtAnnotation;
-    static type (name: 'com.sun.javadoc.AnnotationDesc', ...args: any[]): classes.csjAnnotationDesc;
-    static type (name: 'com.sun.javadoc.AnnotationDesc.ElementValuePair', ...args: any[]): classes.csjAElementValuePair;
     static type (name: 'jdk.jfr.AnnotationElement', ...args: any[]): typeof classes.jjAnnotationElement;
     static type (name: 'java.lang.annotation.AnnotationFormatError', ...args: any[]): typeof classes.jlaAnnotationFormatError;
     static type (name: 'javax.lang.model.element.AnnotationMirror', ...args: any[]): classes.jlmeAnnotationMirror;
     static type (name: 'com.sun.source.tree.AnnotationTree', ...args: any[]): classes.csstAnnotationTree;
-    static type (name: 'com.sun.javadoc.AnnotationTypeDoc', ...args: any[]): classes.csjAnnotationTypeDoc;
-    static type (name: 'com.sun.javadoc.AnnotationTypeElementDoc', ...args: any[]): classes.csjAnnotationTypeElementDoc;
     static type (name: 'java.lang.annotation.AnnotationTypeMismatchException', ...args: any[]): typeof classes.jlaAnnotationTypeMismatchException;
-    static type (name: 'com.sun.javadoc.AnnotationValue', ...args: any[]): classes.csjAnnotationValue;
     static type (name: 'javax.lang.model.element.AnnotationValue', ...args: any[]): classes.jlmeAnnotationValue;
     static type (name: 'javax.lang.model.element.AnnotationValueVisitor', ...args: any[]): classes.jlmeAnnotationValueVisitor;
     static type (name: 'javax.security.auth.login.AppConfigurationEntry', ...args: any[]): typeof classes.jsalAppConfigurationEntry;
@@ -189,10 +178,6 @@ export class types {
     static type (name: 'java.awt.desktop.AppForegroundListener', ...args: any[]): classes.jadAppForegroundListener;
     static type (name: 'java.awt.desktop.AppHiddenEvent', ...args: any[]): typeof classes.jadAppHiddenEvent;
     static type (name: 'java.awt.desktop.AppHiddenListener', ...args: any[]): classes.jadAppHiddenListener;
-    static type (name: 'java.applet.Applet', ...args: any[]): typeof classes.jaApplet;
-    static type (name: 'java.applet.AppletContext', ...args: any[]): classes.jaAppletContext;
-    static type (name: 'java.beans.AppletInitializer', ...args: any[]): classes.jbAppletInitializer;
-    static type (name: 'java.applet.AppletStub', ...args: any[]): classes.jaAppletStub;
     static type (name: 'java.awt.desktop.AppReopenedEvent', ...args: any[]): typeof classes.jadAppReopenedEvent;
     static type (name: 'java.awt.desktop.AppReopenedListener', ...args: any[]): classes.jadAppReopenedListener;
     static type (name: 'java.awt.geom.Arc2D', ...args: any[]): typeof classes.jagArc2D;
@@ -204,12 +189,10 @@ export class types {
     static type (name: 'java.lang.reflect.Array', ...args: any[]): typeof classes.jlrArray;
     static type (name: 'java.sql.Array', ...args: any[]): classes.jsArray;
     static type (name: 'com.sun.source.tree.ArrayAccessTree', ...args: any[]): classes.csstArrayAccessTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ArrayAccessTree', ...args: any[]): classes.njnatArrayAccessTree;
     static type (name: 'java.util.concurrent.ArrayBlockingQueue', ...args: any[]): typeof classes.jucArrayBlockingQueue;
     static type (name: 'java.util.ArrayDeque', ...args: any[]): typeof classes.juArrayDeque;
     static type (name: 'java.lang.ArrayIndexOutOfBoundsException', ...args: any[]): typeof classes.jlArrayIndexOutOfBoundsException;
     static type (name: 'java.util.ArrayList', ...args: any[]): typeof classes.juArrayList;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ArrayLiteralTree', ...args: any[]): classes.njnatArrayLiteralTree;
     static type (name: 'com.sun.jdi.ArrayReference', ...args: any[]): classes.csjArrayReference;
     static type (name: 'java.util.Arrays', ...args: any[]): typeof classes.juArrays;
     static type (name: 'java.lang.ArrayStoreException', ...args: any[]): typeof classes.jlArrayStoreException;
@@ -220,7 +203,6 @@ export class types {
     static type (name: 'java.lang.AssertionError', ...args: any[]): typeof classes.jlAssertionError;
     static type (name: 'com.sun.source.tree.AssertTree', ...args: any[]): classes.csstAssertTree;
     static type (name: 'com.sun.source.tree.AssignmentTree', ...args: any[]): classes.csstAssignmentTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.AssignmentTree', ...args: any[]): classes.njnatAssignmentTree;
     static type (name: 'com.sun.nio.sctp.Association', ...args: any[]): typeof classes.csnsAssociation;
     static type (name: 'com.sun.nio.sctp.AssociationChangeNotification', ...args: any[]): typeof classes.csnsAssociationChangeNotification;
     static type (name: 'com.sun.nio.sctp.AssociationChangeNotification.AssocChangeEvent', ...args: any[]): typeof classes.csnsAAssocChangeEvent;
@@ -266,8 +248,6 @@ export class types {
     static type (name: 'javax.naming.directory.AttributeInUseException', ...args: any[]): typeof classes.jndAttributeInUseException;
     static type (name: 'javax.management.AttributeList', ...args: any[]): typeof classes.jmAttributeList;
     static type (name: 'javax.swing.text.html.parser.AttributeList', ...args: any[]): typeof classes.jsthpAttributeList;
-    static type (name: 'org.xml.sax.AttributeList', ...args: any[]): classes.oxsAttributeList;
-    static type (name: 'org.xml.sax.helpers.AttributeListImpl', ...args: any[]): typeof classes.oxshAttributeListImpl;
     static type (name: 'javax.naming.directory.AttributeModificationException', ...args: any[]): typeof classes.jndAttributeModificationException;
     static type (name: 'javax.management.AttributeNotFoundException', ...args: any[]): typeof classes.jmAttributeNotFoundException;
     static type (name: 'java.util.jar.Attributes', ...args: any[]): typeof classes.jujAttributes;
@@ -288,7 +268,6 @@ export class types {
     static type (name: 'com.sun.source.doctree.AttributeTree.ValueKind', ...args: any[]): typeof classes.cssdAValueKind;
     static type (name: 'javax.management.AttributeValueExp', ...args: any[]): typeof classes.jmAttributeValueExp;
     static type (name: 'java.nio.file.attribute.AttributeView', ...args: any[]): classes.jnfaAttributeView;
-    static type (name: 'java.applet.AudioClip', ...args: any[]): classes.jaAudioClip;
     static type (name: 'javax.sound.sampled.AudioFileFormat', ...args: any[]): typeof classes.jssAudioFileFormat;
     static type (name: 'javax.sound.sampled.AudioFileFormat.Type', ...args: any[]): typeof classes.jssAType;
     static type (name: 'javax.sound.sampled.spi.AudioFileReader', ...args: any[]): typeof classes.jsssAudioFileReader;
@@ -451,7 +430,6 @@ export class types {
     static type (name: 'java.util.function.BinaryOperator', ...args: any[]): classes.jufBinaryOperator;
     static type (name: 'javax.naming.BinaryRefAddr', ...args: any[]): typeof classes.jnBinaryRefAddr;
     static type (name: 'com.sun.source.tree.BinaryTree', ...args: any[]): classes.csstBinaryTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.BinaryTree', ...args: any[]): classes.njnatBinaryTree;
     static type (name: 'java.net.BindException', ...args: any[]): typeof classes.jnBindException;
     static type (name: 'javax.naming.Binding', ...args: any[]): typeof classes.jnBinding;
     static type (name: 'javax.script.Bindings', ...args: any[]): classes.jsBindings;
@@ -462,7 +440,6 @@ export class types {
     static type (name: 'java.util.concurrent.BlockingQueue', ...args: any[]): classes.jucBlockingQueue;
     static type (name: 'com.sun.source.doctree.BlockTagTree', ...args: any[]): classes.cssdBlockTagTree;
     static type (name: 'com.sun.source.tree.BlockTree', ...args: any[]): classes.csstBlockTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.BlockTree', ...args: any[]): classes.njnatBlockTree;
     static type (name: 'javax.swing.text.html.BlockView', ...args: any[]): typeof classes.jsthBlockView;
     static type (name: 'javax.imageio.plugins.bmp.BMPImageWriteParam', ...args: any[]): typeof classes.jipbBMPImageWriteParam;
     static type (name: 'java.awt.print.Book', ...args: any[]): typeof classes.japBook;
@@ -495,7 +472,6 @@ export class types {
     static type (name: 'com.sun.jdi.event.BreakpointEvent', ...args: any[]): classes.csjeBreakpointEvent;
     static type (name: 'com.sun.jdi.request.BreakpointRequest', ...args: any[]): classes.csjrBreakpointRequest;
     static type (name: 'com.sun.source.tree.BreakTree', ...args: any[]): classes.csstBreakTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.BreakTree', ...args: any[]): classes.njnatBreakTree;
     static type (name: 'java.util.concurrent.BrokenBarrierException', ...args: any[]): typeof classes.jucBrokenBarrierException;
     static type (name: 'java.nio.Buffer', ...args: any[]): typeof classes.jnBuffer;
     static type (name: 'java.awt.BufferCapabilities', ...args: any[]): typeof classes.jaBufferCapabilities;
@@ -559,7 +535,6 @@ export class types {
     static type (name: 'javax.swing.event.CaretEvent', ...args: any[]): typeof classes.jseCaretEvent;
     static type (name: 'javax.swing.event.CaretListener', ...args: any[]): classes.jseCaretListener;
     static type (name: 'com.sun.source.tree.CaseTree', ...args: any[]): classes.csstCaseTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.CaseTree', ...args: any[]): classes.njnatCaseTree;
     static type (name: 'javax.xml.catalog.Catalog', ...args: any[]): classes.jxcCatalog;
     static type (name: 'javax.xml.catalog.CatalogException', ...args: any[]): typeof classes.jxcCatalogException;
     static type (name: 'javax.xml.catalog.CatalogFeatures', ...args: any[]): typeof classes.jxcCatalogFeatures;
@@ -568,27 +543,19 @@ export class types {
     static type (name: 'javax.xml.catalog.CatalogManager', ...args: any[]): typeof classes.jxcCatalogManager;
     static type (name: 'javax.xml.catalog.CatalogResolver', ...args: any[]): classes.jxcCatalogResolver;
     static type (name: 'com.sun.source.tree.CatchTree', ...args: any[]): classes.csstCatchTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.CatchTree', ...args: any[]): classes.njnatCatchTree;
     static type (name: 'org.w3c.dom.CDATASection', ...args: any[]): classes.owdCDATASection;
     static type (name: 'javax.swing.CellEditor', ...args: any[]): classes.jsCellEditor;
     static type (name: 'javax.swing.event.CellEditorListener', ...args: any[]): classes.jseCellEditorListener;
     static type (name: 'javax.swing.CellRendererPane', ...args: any[]): typeof classes.jsCellRendererPane;
     static type (name: 'java.security.cert.Certificate', ...args: any[]): typeof classes.jscCertificate;
-    static type (name: 'java.security.Certificate', ...args: any[]): classes.jsCertificate;
-    static type (name: 'javax.security.cert.Certificate', ...args: any[]): typeof classes.jscCertificate;
     static type (name: 'java.security.cert.Certificate.CertificateRep', ...args: any[]): typeof classes.jscCCertificateRep;
     static type (name: 'java.security.cert.CertificateEncodingException', ...args: any[]): typeof classes.jscCertificateEncodingException;
-    static type (name: 'javax.security.cert.CertificateEncodingException', ...args: any[]): typeof classes.jscCertificateEncodingException;
     static type (name: 'java.security.cert.CertificateException', ...args: any[]): typeof classes.jscCertificateException;
-    static type (name: 'javax.security.cert.CertificateException', ...args: any[]): typeof classes.jscCertificateException;
     static type (name: 'java.security.cert.CertificateExpiredException', ...args: any[]): typeof classes.jscCertificateExpiredException;
-    static type (name: 'javax.security.cert.CertificateExpiredException', ...args: any[]): typeof classes.jscCertificateExpiredException;
     static type (name: 'java.security.cert.CertificateFactory', ...args: any[]): typeof classes.jscCertificateFactory;
     static type (name: 'java.security.cert.CertificateFactorySpi', ...args: any[]): typeof classes.jscCertificateFactorySpi;
     static type (name: 'java.security.cert.CertificateNotYetValidException', ...args: any[]): typeof classes.jscCertificateNotYetValidException;
-    static type (name: 'javax.security.cert.CertificateNotYetValidException', ...args: any[]): typeof classes.jscCertificateNotYetValidException;
     static type (name: 'java.security.cert.CertificateParsingException', ...args: any[]): typeof classes.jscCertificateParsingException;
-    static type (name: 'javax.security.cert.CertificateParsingException', ...args: any[]): typeof classes.jscCertificateParsingException;
     static type (name: 'java.security.cert.CertificateRevokedException', ...args: any[]): typeof classes.jscCertificateRevokedException;
     static type (name: 'java.security.cert.CertPath', ...args: any[]): typeof classes.jscCertPath;
     static type (name: 'java.security.cert.CertPath.CertPathRep', ...args: any[]): typeof classes.jscCCertPathRep;
@@ -663,12 +630,8 @@ export class types {
     static type (name: 'java.lang.Class', ...args: any[]): typeof classes.jlClass;
     static type (name: 'java.lang.ClassCastException', ...args: any[]): typeof classes.jlClassCastException;
     static type (name: 'java.lang.ClassCircularityError', ...args: any[]): typeof classes.jlClassCircularityError;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ClassDeclarationTree', ...args: any[]): classes.njnatClassDeclarationTree;
     static type (name: 'java.lang.instrument.ClassDefinition', ...args: any[]): typeof classes.jliClassDefinition;
-    static type (name: 'com.sun.javadoc.ClassDoc', ...args: any[]): classes.csjClassDoc;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ClassExpressionTree', ...args: any[]): classes.njnatClassExpressionTree;
     static type (name: 'java.lang.instrument.ClassFileTransformer', ...args: any[]): classes.jliClassFileTransformer;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.ClassFilter', ...args: any[]): classes.njnasClassFilter;
     static type (name: 'java.lang.ClassFormatError', ...args: any[]): typeof classes.jlClassFormatError;
     static type (name: 'java.lang.ClassLoader', ...args: any[]): typeof classes.jlClassLoader;
     static type (name: 'com.sun.jdi.ClassLoaderReference', ...args: any[]): classes.csjClassLoaderReference;
@@ -744,9 +707,7 @@ export class types {
     static type (name: 'javax.script.Compilable', ...args: any[]): classes.jsCompilable;
     static type (name: 'java.lang.management.CompilationMXBean', ...args: any[]): classes.jlmCompilationMXBean;
     static type (name: 'com.sun.source.tree.CompilationUnitTree', ...args: any[]): classes.csstCompilationUnitTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.CompilationUnitTree', ...args: any[]): classes.njnatCompilationUnitTree;
     static type (name: 'javax.script.CompiledScript', ...args: any[]): typeof classes.jsCompiledScript;
-    static type (name: 'java.lang.Compiler', ...args: any[]): typeof classes.jlCompiler;
     static type (name: 'java.util.concurrent.CompletableFuture', ...args: any[]): typeof classes.jucCompletableFuture;
     static type (name: 'java.util.concurrent.CompletableFuture.AsynchronousCompletionTask', ...args: any[]): classes.jucCAsynchronousCompletionTask;
     static type (name: 'javax.annotation.processing.Completion', ...args: any[]): classes.japCompletion;
@@ -779,7 +740,6 @@ export class types {
     static type (name: 'jdk.dynalink.linker.support.CompositeTypeBasedGuardingDynamicLinker', ...args: any[]): typeof classes.jdlsCompositeTypeBasedGuardingDynamicLinker;
     static type (name: 'javax.swing.text.CompositeView', ...args: any[]): typeof classes.jstCompositeView;
     static type (name: 'com.sun.source.tree.CompoundAssignmentTree', ...args: any[]): classes.csstCompoundAssignmentTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.CompoundAssignmentTree', ...args: any[]): classes.njnatCompoundAssignmentTree;
     static type (name: 'javax.swing.border.CompoundBorder', ...args: any[]): typeof classes.jsbCompoundBorder;
     static type (name: 'javax.sound.sampled.CompoundControl', ...args: any[]): typeof classes.jssCompoundControl;
     static type (name: 'javax.sound.sampled.CompoundControl.Type', ...args: any[]): typeof classes.jssCType;
@@ -797,8 +757,6 @@ export class types {
     static type (name: 'java.util.concurrent.ConcurrentSkipListSet', ...args: any[]): typeof classes.jucConcurrentSkipListSet;
     static type (name: 'java.util.concurrent.locks.Condition', ...args: any[]): classes.juclCondition;
     static type (name: 'com.sun.source.tree.ConditionalExpressionTree', ...args: any[]): classes.csstConditionalExpressionTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ConditionalExpressionTree', ...args: any[]): classes.njnatConditionalExpressionTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ConditionalLoopTree', ...args: any[]): classes.njnatConditionalLoopTree;
     static type (name: 'auth.com.sun.security.auth.login.ConfigFile', ...args: any[]): typeof classes.acssalConfigFile;
     static type (name: 'java.lang.module.Configuration', ...args: any[]): typeof classes.jlmConfiguration;
     static type (name: 'javax.security.auth.login.Configuration', ...args: any[]): typeof classes.jsalConfiguration;
@@ -829,7 +787,6 @@ export class types {
     static type (name: 'java.lang.invoke.ConstantBootstraps', ...args: any[]): typeof classes.jliConstantBootstraps;
     static type (name: 'java.lang.invoke.ConstantCallSite', ...args: any[]): typeof classes.jliConstantCallSite;
     static type (name: 'java.lang.reflect.Constructor', ...args: any[]): typeof classes.jlrConstructor;
-    static type (name: 'com.sun.javadoc.ConstructorDoc', ...args: any[]): classes.csjConstructorDoc;
     static type (name: 'java.util.function.Consumer', ...args: any[]): classes.jufConsumer;
     static type (name: 'java.awt.Container', ...args: any[]): typeof classes.jaContainer;
     static type (name: 'java.awt.event.ContainerAdapter', ...args: any[]): typeof classes.jaeContainerAdapter;
@@ -840,13 +797,10 @@ export class types {
     static type (name: 'org.xml.sax.ContentHandler', ...args: any[]): classes.oxsContentHandler;
     static type (name: 'java.net.ContentHandlerFactory', ...args: any[]): classes.jnContentHandlerFactory;
     static type (name: 'javax.swing.text.html.parser.ContentModel', ...args: any[]): typeof classes.jsthpContentModel;
-    static type (name: 'com.sun.jarsigner.ContentSigner', ...args: any[]): typeof classes.csjContentSigner;
-    static type (name: 'com.sun.jarsigner.ContentSignerParameters', ...args: any[]): classes.csjContentSignerParameters;
     static type (name: 'javax.naming.Context', ...args: any[]): classes.jnContext;
     static type (name: 'javax.naming.ContextNotEmptyException', ...args: any[]): typeof classes.jnContextNotEmptyException;
     static type (name: 'java.awt.image.renderable.ContextualRenderedImageFactory', ...args: any[]): classes.jairContextualRenderedImageFactory;
     static type (name: 'com.sun.source.tree.ContinueTree', ...args: any[]): classes.csstContinueTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ContinueTree', ...args: any[]): classes.njnatContinueTree;
     static type (name: 'javax.naming.ldap.Control', ...args: any[]): classes.jnlControl;
     static type (name: 'javax.sound.sampled.Control', ...args: any[]): typeof classes.jssControl;
     static type (name: 'javax.sound.sampled.Control.Type', ...args: any[]): typeof classes.jssCType;
@@ -950,7 +904,6 @@ export class types {
     static type (name: 'java.time.format.DateTimeParseException', ...args: any[]): typeof classes.jtfDateTimeParseException;
     static type (name: 'javax.print.attribute.DateTimeSyntax', ...args: any[]): typeof classes.jpaDateTimeSyntax;
     static type (name: 'java.time.DayOfWeek', ...args: any[]): typeof classes.jtDayOfWeek;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.DebuggerTree', ...args: any[]): classes.njnatDebuggerTree;
     static type (name: 'javax.swing.DebugGraphics', ...args: any[]): typeof classes.jsDebugGraphics;
     static type (name: 'java.text.DecimalFormat', ...args: any[]): typeof classes.jtDecimalFormat;
     static type (name: 'java.text.DecimalFormatSymbols', ...args: any[]): typeof classes.jtDecimalFormatSymbols;
@@ -989,8 +942,6 @@ export class types {
     static type (name: 'javax.swing.DefaultListCellRenderer.UIResource', ...args: any[]): typeof classes.jsDUIResource;
     static type (name: 'javax.swing.DefaultListModel', ...args: any[]): typeof classes.jsDefaultListModel;
     static type (name: 'javax.swing.DefaultListSelectionModel', ...args: any[]): typeof classes.jsDefaultListSelectionModel;
-    static type (name: 'javax.management.DefaultLoaderRepository', ...args: any[]): typeof classes.jmDefaultLoaderRepository;
-    static type (name: 'javax.management.loading.DefaultLoaderRepository', ...args: any[]): typeof classes.jmlDefaultLoaderRepository;
     static type (name: 'javax.swing.plaf.basic.DefaultMenuLayout', ...args: any[]): typeof classes.jspbDefaultMenuLayout;
     static type (name: 'javax.swing.plaf.metal.DefaultMetalTheme', ...args: any[]): typeof classes.jspmDefaultMetalTheme;
     static type (name: 'javax.swing.tree.DefaultMutableTreeNode', ...args: any[]): typeof classes.jstDefaultMutableTreeNode;
@@ -1005,7 +956,6 @@ export class types {
     static type (name: 'javax.swing.table.DefaultTableCellRenderer.UIResource', ...args: any[]): typeof classes.jstDUIResource;
     static type (name: 'javax.swing.table.DefaultTableColumnModel', ...args: any[]): typeof classes.jstDefaultTableColumnModel;
     static type (name: 'javax.swing.table.DefaultTableModel', ...args: any[]): typeof classes.jstDefaultTableModel;
-    static type (name: 'javax.swing.text.DefaultTextUI', ...args: any[]): typeof classes.jstDefaultTextUI;
     static type (name: 'javax.swing.tree.DefaultTreeCellEditor', ...args: any[]): typeof classes.jstDefaultTreeCellEditor;
     static type (name: 'javax.swing.tree.DefaultTreeCellRenderer', ...args: any[]): typeof classes.jstDefaultTreeCellRenderer;
     static type (name: 'javax.swing.tree.DefaultTreeModel', ...args: any[]): typeof classes.jstDefaultTreeModel;
@@ -1043,13 +993,10 @@ export class types {
     static type (name: 'javax.crypto.spec.DHPublicKeySpec', ...args: any[]): typeof classes.jcsDHPublicKeySpec;
     static type (name: 'jdk.jshell.Diag', ...args: any[]): typeof classes.jjDiag;
     static type (name: 'javax.tools.Diagnostic', ...args: any[]): classes.jtDiagnostic;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.Diagnostic', ...args: any[]): classes.njnatDiagnostic;
     static type (name: 'javax.tools.Diagnostic.Kind', ...args: any[]): typeof classes.jtDKind;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.Diagnostic.Kind', ...args: any[]): typeof classes.njnatDKind;
     static type (name: 'javax.tools.DiagnosticCollector', ...args: any[]): typeof classes.jtDiagnosticCollector;
     static type (name: 'com.sun.management.DiagnosticCommandMBean', ...args: any[]): classes.csmDiagnosticCommandMBean;
     static type (name: 'javax.tools.DiagnosticListener', ...args: any[]): classes.jtDiagnosticListener;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.DiagnosticListener', ...args: any[]): classes.njnatDiagnosticListener;
     static type (name: 'java.awt.Dialog', ...args: any[]): typeof classes.jaDialog;
     static type (name: 'java.awt.Dialog.ModalExclusionType', ...args: any[]): typeof classes.jaDModalExclusionType;
     static type (name: 'java.awt.Dialog.ModalityType', ...args: any[]): typeof classes.jaDModalityType;
@@ -1078,12 +1025,10 @@ export class types {
     static type (name: 'javax.naming.spi.DirStateFactory.Result', ...args: any[]): typeof classes.jnsDResult;
     static type (name: 'java.awt.DisplayMode', ...args: any[]): typeof classes.jaDisplayMode;
     static type (name: 'java.awt.dnd.DnDConstants', ...args: any[]): typeof classes.jadDnDConstants;
-    static type (name: 'com.sun.javadoc.Doc', ...args: any[]): classes.csjDoc;
     static type (name: 'javax.print.Doc', ...args: any[]): classes.jpDoc;
     static type (name: 'javax.print.attribute.DocAttribute', ...args: any[]): classes.jpaDocAttribute;
     static type (name: 'javax.print.attribute.DocAttributeSet', ...args: any[]): classes.jpaDocAttributeSet;
     static type (name: 'com.sun.source.doctree.DocCommentTree', ...args: any[]): classes.cssdDocCommentTree;
-    static type (name: 'com.sun.javadoc.DocErrorReporter', ...args: any[]): classes.csjDocErrorReporter;
     static type (name: 'javax.print.DocFlavor', ...args: any[]): typeof classes.jpDocFlavor;
     static type (name: 'javax.print.DocFlavor.BYTE_ARRAY', ...args: any[]): typeof classes.jpDBYTE_ARRAY;
     static type (name: 'javax.print.DocFlavor.CHAR_ARRAY', ...args: any[]): typeof classes.jpDCHAR_ARRAY;
@@ -1092,7 +1037,6 @@ export class types {
     static type (name: 'javax.print.DocFlavor.SERVICE_FORMATTED', ...args: any[]): typeof classes.jpDSERVICE_FORMATTED;
     static type (name: 'javax.print.DocFlavor.STRING', ...args: any[]): typeof classes.jpDSTRING;
     static type (name: 'javax.print.DocFlavor.URL', ...args: any[]): typeof classes.jpDURL;
-    static type (name: 'com.sun.javadoc.Doclet', ...args: any[]): typeof classes.csjDoclet;
     static type (name: 'jdk.javadoc.doclet.Doclet', ...args: any[]): classes.jjdDoclet;
     static type (name: 'jdk.javadoc.doclet.Doclet.Option', ...args: any[]): classes.jjdDOption;
     static type (name: 'jdk.javadoc.doclet.Doclet.Option.Kind', ...args: any[]): typeof classes.jjdDOKind;
@@ -1125,7 +1069,6 @@ export class types {
     static type (name: 'javax.swing.text.DocumentFilter', ...args: any[]): typeof classes.jstDocumentFilter;
     static type (name: 'javax.swing.text.DocumentFilter.FilterBypass', ...args: any[]): typeof classes.jstDFilterBypass;
     static type (name: 'org.w3c.dom.DocumentFragment', ...args: any[]): classes.owdDocumentFragment;
-    static type (name: 'org.xml.sax.DocumentHandler', ...args: any[]): classes.oxsDocumentHandler;
     static type (name: 'javax.swing.event.DocumentListener', ...args: any[]): classes.jseDocumentListener;
     static type (name: 'javax.print.attribute.standard.DocumentName', ...args: any[]): typeof classes.jpasDocumentName;
     static type (name: 'javax.swing.text.html.parser.DocumentParser', ...args: any[]): typeof classes.jsthpDocumentParser;
@@ -1176,7 +1119,6 @@ export class types {
     static type (name: 'java.util.function.DoubleUnaryOperator', ...args: any[]): classes.jufDoubleUnaryOperator;
     static type (name: 'com.sun.jdi.DoubleValue', ...args: any[]): classes.csjDoubleValue;
     static type (name: 'com.sun.source.tree.DoWhileLoopTree', ...args: any[]): classes.csstDoWhileLoopTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.DoWhileLoopTree', ...args: any[]): classes.njnatDoWhileLoopTree;
     static type (name: 'java.awt.dnd.DragGestureEvent', ...args: any[]): typeof classes.jadDragGestureEvent;
     static type (name: 'java.awt.dnd.DragGestureListener', ...args: any[]): classes.jadDragGestureListener;
     static type (name: 'java.awt.dnd.DragGestureRecognizer', ...args: any[]): typeof classes.jadDragGestureRecognizer;
@@ -1266,7 +1208,6 @@ export class types {
     static type (name: 'javax.swing.border.EmptyBorder', ...args: any[]): typeof classes.jsbEmptyBorder;
     static type (name: 'java.util.EmptyStackException', ...args: any[]): typeof classes.juEmptyStackException;
     static type (name: 'com.sun.source.tree.EmptyStatementTree', ...args: any[]): classes.csstEmptyStatementTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.EmptyStatementTree', ...args: any[]): classes.njnatEmptyStatementTree;
     static type (name: 'java.security.spec.EncodedKeySpec', ...args: any[]): typeof classes.jssEncodedKeySpec;
     static type (name: 'java.beans.Encoder', ...args: any[]): typeof classes.jbEncoder;
     static type (name: 'javax.crypto.EncryptedPrivateKeyInfo', ...args: any[]): typeof classes.jcEncryptedPrivateKeyInfo;
@@ -1296,7 +1237,6 @@ export class types {
     static type (name: 'jdk.jshell.ErroneousSnippet', ...args: any[]): typeof classes.jjErroneousSnippet;
     static type (name: 'com.sun.source.doctree.ErroneousTree', ...args: any[]): classes.cssdErroneousTree;
     static type (name: 'com.sun.source.tree.ErroneousTree', ...args: any[]): classes.csstErroneousTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ErroneousTree', ...args: any[]): classes.njnatErroneousTree;
     static type (name: 'java.lang.Error', ...args: any[]): typeof classes.jlError;
     static type (name: 'org.xml.sax.ErrorHandler', ...args: any[]): classes.oxsErrorHandler;
     static type (name: 'javax.xml.transform.ErrorListener', ...args: any[]): classes.jxtErrorListener;
@@ -1305,7 +1245,6 @@ export class types {
     static type (name: 'javax.swing.border.EtchedBorder', ...args: any[]): typeof classes.jsbEtchedBorder;
     static type (name: 'jdk.jshell.EvalException', ...args: any[]): typeof classes.jjEvalException;
     static type (name: 'com.sun.jdi.event.Event', ...args: any[]): classes.csjeEvent;
-    static type (name: 'java.awt.Event', ...args: any[]): typeof classes.jaEvent;
     static type (name: 'jdk.jfr.Event', ...args: any[]): typeof classes.jjEvent;
     static type (name: 'org.w3c.dom.events.Event', ...args: any[]): classes.owdeEvent;
     static type (name: 'javax.naming.event.EventContext', ...args: any[]): classes.jneEventContext;
@@ -1342,7 +1281,6 @@ export class types {
     static type (name: 'java.util.concurrent.Exchanger', ...args: any[]): typeof classes.jucExchanger;
     static type (name: 'java.lang.reflect.Executable', ...args: any[]): typeof classes.jlrExecutable;
     static type (name: 'javax.lang.model.element.ExecutableElement', ...args: any[]): classes.jlmeExecutableElement;
-    static type (name: 'com.sun.javadoc.ExecutableMemberDoc', ...args: any[]): classes.csjExecutableMemberDoc;
     static type (name: 'javax.lang.model.type.ExecutableType', ...args: any[]): classes.jlmtExecutableType;
     static type (name: 'jdk.jshell.spi.ExecutionControl', ...args: any[]): classes.jjsExecutionControl;
     static type (name: 'jdk.jshell.spi.ExecutionControl.ClassBytecodes', ...args: any[]): typeof classes.jjsEClassBytecodes;
@@ -1370,15 +1308,12 @@ export class types {
     static type (name: 'javax.imageio.plugins.tiff.ExifParentTIFFTagSet', ...args: any[]): typeof classes.jiptExifParentTIFFTagSet;
     static type (name: 'javax.imageio.plugins.tiff.ExifTIFFTagSet', ...args: any[]): typeof classes.jiptExifTIFFTagSet;
     static type (name: 'javax.swing.tree.ExpandVetoException', ...args: any[]): typeof classes.jstExpandVetoException;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ExportEntryTree', ...args: any[]): classes.njnatExportEntryTree;
     static type (name: 'java.rmi.server.ExportException', ...args: any[]): typeof classes.jrsExportException;
     static type (name: 'com.sun.source.tree.ExportsTree', ...args: any[]): classes.csstExportsTree;
     static type (name: 'java.beans.Expression', ...args: any[]): typeof classes.jbExpression;
     static type (name: 'jdk.jshell.ExpressionSnippet', ...args: any[]): typeof classes.jjExpressionSnippet;
     static type (name: 'com.sun.source.tree.ExpressionStatementTree', ...args: any[]): classes.csstExpressionStatementTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ExpressionStatementTree', ...args: any[]): classes.njnatExpressionStatementTree;
     static type (name: 'com.sun.source.tree.ExpressionTree', ...args: any[]): classes.csstExpressionTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ExpressionTree', ...args: any[]): classes.njnatExpressionTree;
     static type (name: 'jgss.com.sun.security.jgss.ExtendedGSSContext', ...args: any[]): classes.jcssjExtendedGSSContext;
     static type (name: 'jgss.com.sun.security.jgss.ExtendedGSSCredential', ...args: any[]): classes.jcssjExtendedGSSCredential;
     static type (name: 'javax.naming.ldap.ExtendedRequest', ...args: any[]): classes.jnlExtendedRequest;
@@ -1396,7 +1331,6 @@ export class types {
     static type (name: 'javax.print.attribute.standard.Fidelity', ...args: any[]): typeof classes.jpasFidelity;
     static type (name: 'com.sun.jdi.Field', ...args: any[]): classes.csjField;
     static type (name: 'java.lang.reflect.Field', ...args: any[]): typeof classes.jlrField;
-    static type (name: 'com.sun.javadoc.FieldDoc', ...args: any[]): classes.csjFieldDoc;
     static type (name: 'java.text.FieldPosition', ...args: any[]): typeof classes.jtFieldPosition;
     static type (name: 'javax.swing.text.FieldView', ...args: any[]): typeof classes.jstFieldView;
     static type (name: 'java.io.File', ...args: any[]): typeof classes.jiFile;
@@ -1496,14 +1430,12 @@ export class types {
     static type (name: 'java.awt.FontMetrics', ...args: any[]): typeof classes.jaFontMetrics;
     static type (name: 'java.awt.font.FontRenderContext', ...args: any[]): typeof classes.jafFontRenderContext;
     static type (name: 'javax.swing.plaf.FontUIResource', ...args: any[]): typeof classes.jspFontUIResource;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ForInLoopTree', ...args: any[]): classes.njnatForInLoopTree;
     static type (name: 'java.util.concurrent.ForkJoinPool', ...args: any[]): typeof classes.jucForkJoinPool;
     static type (name: 'java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory', ...args: any[]): classes.jucFForkJoinWorkerThreadFactory;
     static type (name: 'java.util.concurrent.ForkJoinPool.ManagedBlocker', ...args: any[]): classes.jucFManagedBlocker;
     static type (name: 'java.util.concurrent.ForkJoinTask', ...args: any[]): typeof classes.jucForkJoinTask;
     static type (name: 'java.util.concurrent.ForkJoinWorkerThread', ...args: any[]): typeof classes.jucForkJoinWorkerThread;
     static type (name: 'com.sun.source.tree.ForLoopTree', ...args: any[]): classes.csstForLoopTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ForLoopTree', ...args: any[]): classes.njnatForLoopTree;
     static type (name: 'java.text.Format', ...args: any[]): typeof classes.jtFormat;
     static type (name: 'java.text.Format.Field', ...args: any[]): typeof classes.jtFField;
     static type (name: 'javax.sound.sampled.spi.FormatConversionProvider', ...args: any[]): typeof classes.jsssFormatConversionProvider;
@@ -1518,15 +1450,11 @@ export class types {
     static type (name: 'javax.swing.text.html.FormSubmitEvent', ...args: any[]): typeof classes.jsthFormSubmitEvent;
     static type (name: 'javax.swing.text.html.FormSubmitEvent.MethodType', ...args: any[]): typeof classes.jsthFMethodType;
     static type (name: 'javax.swing.text.html.FormView', ...args: any[]): typeof classes.jsthFormView;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ForOfLoopTree', ...args: any[]): classes.njnatForOfLoopTree;
     static type (name: 'javax.tools.ForwardingFileObject', ...args: any[]): typeof classes.jtForwardingFileObject;
     static type (name: 'javax.tools.ForwardingJavaFileManager', ...args: any[]): typeof classes.jtForwardingJavaFileManager;
     static type (name: 'javax.tools.ForwardingJavaFileObject', ...args: any[]): typeof classes.jtForwardingJavaFileObject;
     static type (name: 'java.awt.Frame', ...args: any[]): typeof classes.jaFrame;
     static type (name: 'java.util.function.Function', ...args: any[]): classes.jufFunction;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.FunctionCallTree', ...args: any[]): classes.njnatFunctionCallTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.FunctionDeclarationTree', ...args: any[]): classes.njnatFunctionDeclarationTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.FunctionExpressionTree', ...args: any[]): classes.njnatFunctionExpressionTree;
     static type (name: 'java.util.concurrent.Future', ...args: any[]): classes.jucFuture;
     static type (name: 'java.util.concurrent.FutureTask', ...args: any[]): typeof classes.jucFutureTask;
     static type (name: 'javax.swing.text.GapContent', ...args: any[]): typeof classes.jstGapContent;
@@ -1549,7 +1477,6 @@ export class types {
     static type (name: 'java.awt.font.GlyphVector', ...args: any[]): typeof classes.jafGlyphVector;
     static type (name: 'javax.swing.text.GlyphView', ...args: any[]): typeof classes.jstGlyphView;
     static type (name: 'javax.swing.text.GlyphView.GlyphPainter', ...args: any[]): typeof classes.jstGGlyphPainter;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.GotoTree', ...args: any[]): classes.njnatGotoTree;
     static type (name: 'java.awt.GradientPaint', ...args: any[]): typeof classes.jaGradientPaint;
     static type (name: 'java.awt.font.GraphicAttribute', ...args: any[]): typeof classes.jafGraphicAttribute;
     static type (name: 'java.awt.Graphics', ...args: any[]): typeof classes.jaGraphics;
@@ -1565,7 +1492,6 @@ export class types {
     static type (name: 'java.awt.GridBagLayout', ...args: any[]): typeof classes.jaGridBagLayout;
     static type (name: 'java.awt.GridBagLayoutInfo', ...args: any[]): typeof classes.jaGridBagLayoutInfo;
     static type (name: 'java.awt.GridLayout', ...args: any[]): typeof classes.jaGridLayout;
-    static type (name: 'java.security.acl.Group', ...args: any[]): classes.jsaGroup;
     static type (name: 'javax.swing.GroupLayout', ...args: any[]): typeof classes.jsGroupLayout;
     static type (name: 'javax.swing.GroupLayout.Alignment', ...args: any[]): typeof classes.jsGAlignment;
     static type (name: 'java.nio.file.attribute.GroupPrincipal', ...args: any[]): classes.jnfaGroupPrincipal;
@@ -1587,7 +1513,6 @@ export class types {
     static type (name: 'java.util.zip.GZIPInputStream', ...args: any[]): typeof classes.juzGZIPInputStream;
     static type (name: 'java.util.zip.GZIPOutputStream', ...args: any[]): typeof classes.juzGZIPOutputStream;
     static type (name: 'java.util.logging.Handler', ...args: any[]): typeof classes.julHandler;
-    static type (name: 'org.xml.sax.HandlerBase', ...args: any[]): typeof classes.oxsHandlerBase;
     static type (name: 'com.sun.nio.sctp.HandlerResult', ...args: any[]): typeof classes.csnsHandlerResult;
     static type (name: 'javax.net.ssl.HandshakeCompletedEvent', ...args: any[]): typeof classes.jnsHandshakeCompletedEvent;
     static type (name: 'javax.net.ssl.HandshakeCompletedListener', ...args: any[]): classes.jnsHandshakeCompletedListener;
@@ -1731,13 +1656,9 @@ export class types {
     static type (name: 'javax.swing.text.IconView', ...args: any[]): typeof classes.jstIconView;
     static type (name: 'com.sun.source.doctree.IdentifierTree', ...args: any[]): classes.cssdIdentifierTree;
     static type (name: 'com.sun.source.tree.IdentifierTree', ...args: any[]): classes.csstIdentifierTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.IdentifierTree', ...args: any[]): classes.njnatIdentifierTree;
-    static type (name: 'java.security.Identity', ...args: any[]): typeof classes.jsIdentity;
     static type (name: 'java.util.IdentityHashMap', ...args: any[]): typeof classes.juIdentityHashMap;
-    static type (name: 'java.security.IdentityScope', ...args: any[]): typeof classes.jsIdentityScope;
     static type (name: 'java.net.IDN', ...args: any[]): typeof classes.jnIDN;
     static type (name: 'com.sun.source.tree.IfTree', ...args: any[]): classes.csstIfTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.IfTree', ...args: any[]): classes.njnatIfTree;
     static type (name: 'javax.imageio.stream.IIOByteBuffer', ...args: any[]): typeof classes.jisIIOByteBuffer;
     static type (name: 'javax.imageio.IIOException', ...args: any[]): typeof classes.jiIIOException;
     static type (name: 'javax.imageio.IIOImage', ...args: any[]): typeof classes.jiIIOImage;
@@ -1809,7 +1730,6 @@ export class types {
     static type (name: 'javax.imageio.spi.ImageWriterSpi', ...args: any[]): typeof classes.jisImageWriterSpi;
     static type (name: 'java.awt.image.ImagingOpException', ...args: any[]): typeof classes.jaiImagingOpException;
     static type (name: 'javax.management.ImmutableDescriptor', ...args: any[]): typeof classes.jmImmutableDescriptor;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ImportEntryTree', ...args: any[]): classes.njnatImportEntryTree;
     static type (name: 'jdk.jshell.ImportSnippet', ...args: any[]): typeof classes.jjImportSnippet;
     static type (name: 'com.sun.source.tree.ImportTree', ...args: any[]): classes.csstImportTree;
     static type (name: 'java.lang.reflect.InaccessibleObjectException', ...args: any[]): typeof classes.jlrInaccessibleObjectException;
@@ -1862,7 +1782,6 @@ export class types {
     static type (name: 'javax.management.InstanceAlreadyExistsException', ...args: any[]): typeof classes.jmInstanceAlreadyExistsException;
     static type (name: 'javax.management.InstanceNotFoundException', ...args: any[]): typeof classes.jmInstanceNotFoundException;
     static type (name: 'com.sun.source.tree.InstanceOfTree', ...args: any[]): classes.csstInstanceOfTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.InstanceOfTree', ...args: any[]): classes.njnatInstanceOfTree;
     static type (name: 'java.time.Instant', ...args: any[]): typeof classes.jtInstant;
     static type (name: 'java.lang.InstantiationError', ...args: any[]): typeof classes.jlInstantiationError;
     static type (name: 'java.lang.InstantiationException', ...args: any[]): typeof classes.jlInstantiationException;
@@ -1912,12 +1831,10 @@ export class types {
     static type (name: 'javax.management.InvalidAttributeValueException', ...args: any[]): typeof classes.jmInvalidAttributeValueException;
     static type (name: 'javax.naming.directory.InvalidAttributeValueException', ...args: any[]): typeof classes.jndInvalidAttributeValueException;
     static type (name: 'java.io.InvalidClassException', ...args: any[]): typeof classes.jiInvalidClassException;
-    static type (name: 'com.sun.jdi.InvalidCodeIndexException', ...args: any[]): typeof classes.csjInvalidCodeIndexException;
     static type (name: 'java.awt.dnd.InvalidDnDOperationException', ...args: any[]): typeof classes.jadInvalidDnDOperationException;
     static type (name: 'java.security.InvalidKeyException', ...args: any[]): typeof classes.jsInvalidKeyException;
     static type (name: 'javax.management.openmbean.InvalidKeyException', ...args: any[]): typeof classes.jmoInvalidKeyException;
     static type (name: 'java.security.spec.InvalidKeySpecException', ...args: any[]): typeof classes.jssInvalidKeySpecException;
-    static type (name: 'com.sun.jdi.InvalidLineNumberException', ...args: any[]): typeof classes.csjInvalidLineNumberException;
     static type (name: 'java.nio.InvalidMarkException', ...args: any[]): typeof classes.jnInvalidMarkException;
     static type (name: 'javax.sound.midi.InvalidMidiDataException', ...args: any[]): typeof classes.jsmInvalidMidiDataException;
     static type (name: 'java.lang.module.InvalidModuleDescriptorException', ...args: any[]): typeof classes.jlmInvalidModuleDescriptorException;
@@ -1961,7 +1878,6 @@ export class types {
     static type (name: 'java.time.chrono.JapaneseChronology', ...args: any[]): typeof classes.jtcJapaneseChronology;
     static type (name: 'java.time.chrono.JapaneseDate', ...args: any[]): typeof classes.jtcJapaneseDate;
     static type (name: 'java.time.chrono.JapaneseEra', ...args: any[]): typeof classes.jtcJapaneseEra;
-    static type (name: 'javax.swing.JApplet', ...args: any[]): typeof classes.jsJApplet;
     static type (name: 'java.util.jar.JarEntry', ...args: any[]): typeof classes.jujJarEntry;
     static type (name: 'java.util.jar.JarException', ...args: any[]): typeof classes.jujJarException;
     static type (name: 'java.util.jar.JarFile', ...args: any[]): typeof classes.jujJarFile;
@@ -2080,7 +1996,6 @@ export class types {
     static type (name: 'jdk.jshell.JShell.Builder', ...args: any[]): typeof classes.jjJBuilder;
     static type (name: 'jdk.jshell.JShellException', ...args: any[]): typeof classes.jjJShellException;
     static type (name: 'javax.swing.JSlider', ...args: any[]): typeof classes.jsJSlider;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.JSObject', ...args: any[]): classes.njnasJSObject;
     static type (name: 'netscape.javascript.JSObject', ...args: any[]): typeof classes.njJSObject;
     static type (name: 'javax.swing.JSpinner', ...args: any[]): typeof classes.jsJSpinner;
     static type (name: 'javax.swing.JSpinner.DateEditor', ...args: any[]): typeof classes.jsJDateEditor;
@@ -2170,7 +2085,6 @@ export class types {
     static type (name: 'auth.com.sun.security.auth.module.Krb5LoginModule', ...args: any[]): typeof classes.acssamKrb5LoginModule;
     static type (name: 'java.awt.Label', ...args: any[]): typeof classes.jaLabel;
     static type (name: 'com.sun.source.tree.LabeledStatementTree', ...args: any[]): classes.csstLabeledStatementTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.LabeledStatementTree', ...args: any[]): classes.njnatLabeledStatementTree;
     static type (name: 'javax.swing.plaf.LabelUI', ...args: any[]): typeof classes.jspLabelUI;
     static type (name: 'javax.swing.text.LabelView', ...args: any[]): typeof classes.jstLabelView;
     static type (name: 'java.lang.invoke.LambdaConversionException', ...args: any[]): typeof classes.jliLambdaConversionException;
@@ -2178,8 +2092,6 @@ export class types {
     static type (name: 'com.sun.source.tree.LambdaExpressionTree.BodyKind', ...args: any[]): typeof classes.csstLBodyKind;
     static type (name: 'java.lang.invoke.LambdaMetafactory', ...args: any[]): typeof classes.jliLambdaMetafactory;
     static type (name: 'javax.security.auth.callback.LanguageCallback', ...args: any[]): typeof classes.jsacLanguageCallback;
-    static type (name: 'com.sun.javadoc.LanguageVersion', ...args: any[]): typeof classes.csjLanguageVersion;
-    static type (name: 'java.security.acl.LastOwnerException', ...args: any[]): typeof classes.jsaLastOwnerException;
     static type (name: 'com.sun.jdi.connect.LaunchingConnector', ...args: any[]): classes.csjcLaunchingConnector;
     static type (name: 'javax.swing.text.LayeredHighlighter', ...args: any[]): typeof classes.jstLayeredHighlighter;
     static type (name: 'javax.swing.text.LayeredHighlighter.LayerPainter', ...args: any[]): typeof classes.jstLLayerPainter;
@@ -2214,9 +2126,7 @@ export class types {
     static type (name: 'javax.sound.sampled.LineEvent.Type', ...args: any[]): typeof classes.jssLType;
     static type (name: 'javax.sound.sampled.LineListener', ...args: any[]): classes.jssLineListener;
     static type (name: 'com.sun.source.tree.LineMap', ...args: any[]): classes.csstLineMap;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.LineMap', ...args: any[]): classes.njnatLineMap;
     static type (name: 'java.awt.font.LineMetrics', ...args: any[]): typeof classes.jafLineMetrics;
-    static type (name: 'java.io.LineNumberInputStream', ...args: any[]): typeof classes.jiLineNumberInputStream;
     static type (name: 'java.io.LineNumberReader', ...args: any[]): typeof classes.jiLineNumberReader;
     static type (name: 'javax.sound.sampled.LineUnavailableException', ...args: any[]): typeof classes.jssLineUnavailableException;
     static type (name: 'java.lang.LinkageError', ...args: any[]): typeof classes.jlLinkageError;
@@ -2252,9 +2162,7 @@ export class types {
     static type (name: 'javax.swing.text.html.ListView', ...args: any[]): typeof classes.jsthListView;
     static type (name: 'com.sun.source.doctree.LiteralTree', ...args: any[]): classes.cssdLiteralTree;
     static type (name: 'com.sun.source.tree.LiteralTree', ...args: any[]): classes.csstLiteralTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.LiteralTree', ...args: any[]): classes.njnatLiteralTree;
     static type (name: 'jdk.jshell.execution.LoaderDelegate', ...args: any[]): classes.jjeLoaderDelegate;
-    static type (name: 'java.rmi.server.LoaderHandler', ...args: any[]): classes.jrsLoaderHandler;
     static type (name: 'java.time.LocalDate', ...args: any[]): typeof classes.jtLocalDate;
     static type (name: 'java.time.LocalDateTime', ...args: any[]): typeof classes.jtLocalDateTime;
     static type (name: 'java.util.Locale', ...args: any[]): typeof classes.juLocale;
@@ -2282,14 +2190,12 @@ export class types {
     static type (name: 'java.lang.management.LockInfo', ...args: any[]): typeof classes.jlmLockInfo;
     static type (name: 'java.util.concurrent.locks.LockSupport', ...args: any[]): typeof classes.juclLockSupport;
     static type (name: 'java.util.logging.Logger', ...args: any[]): typeof classes.julLogger;
-    static type (name: 'java.util.logging.LoggingMXBean', ...args: any[]): classes.julLoggingMXBean;
     static type (name: 'java.util.logging.LoggingPermission', ...args: any[]): typeof classes.julLoggingPermission;
     static type (name: 'javax.security.auth.login.LoginContext', ...args: any[]): typeof classes.jsalLoginContext;
     static type (name: 'javax.security.auth.login.LoginException', ...args: any[]): typeof classes.jsalLoginException;
     static type (name: 'javax.security.auth.spi.LoginModule', ...args: any[]): classes.jsasLoginModule;
     static type (name: 'java.util.logging.LogManager', ...args: any[]): typeof classes.julLogManager;
     static type (name: 'java.util.logging.LogRecord', ...args: any[]): typeof classes.julLogRecord;
-    static type (name: 'java.rmi.server.LogStream', ...args: any[]): typeof classes.jrsLogStream;
     static type (name: 'java.lang.Long', ...args: any[]): typeof classes.jlLong;
     static type (name: 'java.util.concurrent.atomic.LongAccumulator', ...args: any[]): typeof classes.jucaLongAccumulator;
     static type (name: 'java.util.concurrent.atomic.LongAdder', ...args: any[]): typeof classes.jucaLongAdder;
@@ -2311,7 +2217,6 @@ export class types {
     static type (name: 'jdk.dynalink.linker.support.Lookup', ...args: any[]): typeof classes.jdlsLookup;
     static type (name: 'java.awt.image.LookupOp', ...args: any[]): typeof classes.jaiLookupOp;
     static type (name: 'java.awt.image.LookupTable', ...args: any[]): typeof classes.jaiLookupTable;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.LoopTree', ...args: any[]): classes.njnatLoopTree;
     static type (name: 'org.w3c.dom.ls.LSException', ...args: any[]): typeof classes.owdlLSException;
     static type (name: 'org.w3c.dom.ls.LSInput', ...args: any[]): classes.owdlLSInput;
     static type (name: 'org.w3c.dom.ls.LSLoadEvent', ...args: any[]): classes.owdlLSLoadEvent;
@@ -2325,7 +2230,6 @@ export class types {
     static type (name: 'javax.crypto.Mac', ...args: any[]): typeof classes.jcMac;
     static type (name: 'javax.crypto.MacSpi', ...args: any[]): typeof classes.jcMacSpi;
     static type (name: 'com.sun.tools.javac.Main', ...args: any[]): typeof classes.cstjMain;
-    static type (name: 'com.sun.tools.javadoc.Main', ...args: any[]): typeof classes.cstjMain;
     static type (name: 'java.nio.charset.MalformedInputException', ...args: any[]): typeof classes.jncMalformedInputException;
     static type (name: 'javax.naming.MalformedLinkException', ...args: any[]): typeof classes.jnMalformedLinkException;
     static type (name: 'javax.management.MalformedObjectNameException', ...args: any[]): typeof classes.jmMalformedObjectNameException;
@@ -2387,11 +2291,9 @@ export class types {
     static type (name: 'java.awt.MediaTracker', ...args: any[]): typeof classes.jaMediaTracker;
     static type (name: 'javax.print.attribute.standard.MediaTray', ...args: any[]): typeof classes.jpasMediaTray;
     static type (name: 'java.lang.reflect.Member', ...args: any[]): classes.jlrMember;
-    static type (name: 'com.sun.javadoc.MemberDoc', ...args: any[]): classes.csjMemberDoc;
     static type (name: 'com.sun.source.tree.MemberReferenceTree', ...args: any[]): classes.csstMemberReferenceTree;
     static type (name: 'com.sun.source.tree.MemberReferenceTree.ReferenceMode', ...args: any[]): typeof classes.csstMReferenceMode;
     static type (name: 'com.sun.source.tree.MemberSelectTree', ...args: any[]): classes.csstMemberSelectTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.MemberSelectTree', ...args: any[]): classes.njnatMemberSelectTree;
     static type (name: 'java.nio.channels.MembershipKey', ...args: any[]): typeof classes.jncMembershipKey;
     static type (name: 'javax.imageio.stream.MemoryCacheImageInputStream', ...args: any[]): typeof classes.jisMemoryCacheImageInputStream;
     static type (name: 'javax.imageio.stream.MemoryCacheImageOutputStream', ...args: any[]): typeof classes.jisMemoryCacheImageOutputStream;
@@ -2485,7 +2387,6 @@ export class types {
     static type (name: 'com.sun.jdi.Method', ...args: any[]): classes.csjMethod;
     static type (name: 'java.lang.reflect.Method', ...args: any[]): typeof classes.jlrMethod;
     static type (name: 'java.beans.MethodDescriptor', ...args: any[]): typeof classes.jbMethodDescriptor;
-    static type (name: 'com.sun.javadoc.MethodDoc', ...args: any[]): classes.csjMethodDoc;
     static type (name: 'com.sun.jdi.event.MethodEntryEvent', ...args: any[]): classes.csjeMethodEntryEvent;
     static type (name: 'com.sun.jdi.request.MethodEntryRequest', ...args: any[]): classes.csjrMethodEntryRequest;
     static type (name: 'com.sun.jdi.event.MethodExitEvent', ...args: any[]): classes.csjeMethodExitEvent;
@@ -2575,7 +2476,6 @@ export class types {
     static type (name: 'com.sun.jdi.ModuleReference', ...args: any[]): classes.csjModuleReference;
     static type (name: 'java.lang.module.ModuleReference', ...args: any[]): typeof classes.jlmModuleReference;
     static type (name: 'com.sun.source.tree.ModuleTree', ...args: any[]): classes.csstModuleTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ModuleTree', ...args: any[]): classes.njnatModuleTree;
     static type (name: 'com.sun.source.tree.ModuleTree.ModuleKind', ...args: any[]): typeof classes.csstMModuleKind;
     static type (name: 'javax.management.monitor.Monitor', ...args: any[]): typeof classes.jmmMonitor;
     static type (name: 'com.sun.jdi.event.MonitorContendedEnteredEvent', ...args: any[]): classes.csjeMonitorContendedEnteredEvent;
@@ -2678,9 +2578,6 @@ export class types {
     static type (name: 'javax.naming.event.NamingListener', ...args: any[]): classes.jneNamingListener;
     static type (name: 'javax.naming.spi.NamingManager', ...args: any[]): typeof classes.jnsNamingManager;
     static type (name: 'javax.naming.NamingSecurityException', ...args: any[]): typeof classes.jnNamingSecurityException;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.NashornException', ...args: any[]): typeof classes.njnasNashornException;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.NashornScriptEngine', ...args: any[]): typeof classes.njnasNashornScriptEngine;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.NashornScriptEngineFactory', ...args: any[]): typeof classes.njnasNashornScriptEngineFactory;
     static type (name: 'com.sun.jdi.NativeMethodException', ...args: any[]): typeof classes.csjNativeMethodException;
     static type (name: 'java.util.NavigableMap', ...args: any[]): classes.juNavigableMap;
     static type (name: 'java.util.NavigableSet', ...args: any[]): classes.juNavigableSet;
@@ -2695,7 +2592,6 @@ export class types {
     static type (name: 'jdk.net.NetworkPermission', ...args: any[]): typeof classes.jnNetworkPermission;
     static type (name: 'com.sun.source.tree.NewArrayTree', ...args: any[]): classes.csstNewArrayTree;
     static type (name: 'com.sun.source.tree.NewClassTree', ...args: any[]): classes.csstNewClassTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.NewTree', ...args: any[]): classes.njnatNewTree;
     static type (name: 'javax.swing.plaf.nimbus.NimbusLookAndFeel', ...args: any[]): typeof classes.jspnNimbusLookAndFeel;
     static type (name: 'javax.swing.plaf.nimbus.NimbusStyle', ...args: any[]): typeof classes.jspnNimbusStyle;
     static type (name: 'java.lang.NoClassDefFoundError', ...args: any[]): typeof classes.jlNoClassDefFoundError;
@@ -2746,7 +2642,6 @@ export class types {
     static type (name: 'javax.management.NotificationListener', ...args: any[]): classes.jmNotificationListener;
     static type (name: 'javax.management.remote.NotificationResult', ...args: any[]): typeof classes.jmrNotificationResult;
     static type (name: 'java.nio.file.NotLinkException', ...args: any[]): typeof classes.jnfNotLinkException;
-    static type (name: 'java.security.acl.NotOwnerException', ...args: any[]): typeof classes.jsaNotOwnerException;
     static type (name: 'java.io.NotSerializableException', ...args: any[]): typeof classes.jiNotSerializableException;
     static type (name: 'java.nio.channels.NotYetBoundException', ...args: any[]): typeof classes.jncNotYetBoundException;
     static type (name: 'java.nio.channels.NotYetConnectedException', ...args: any[]): typeof classes.jncNotYetConnectedException;
@@ -2792,7 +2687,6 @@ export class types {
     static type (name: 'java.io.ObjectInputStream.GetField', ...args: any[]): typeof classes.jiOGetField;
     static type (name: 'java.io.ObjectInputValidation', ...args: any[]): classes.jiObjectInputValidation;
     static type (name: 'javax.management.ObjectInstance', ...args: any[]): typeof classes.jmObjectInstance;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ObjectLiteralTree', ...args: any[]): classes.njnatObjectLiteralTree;
     static type (name: 'javax.management.ObjectName', ...args: any[]): typeof classes.jmObjectName;
     static type (name: 'java.io.ObjectOutput', ...args: any[]): classes.jiObjectOutput;
     static type (name: 'java.io.ObjectOutputStream', ...args: any[]): typeof classes.jiObjectOutputStream;
@@ -2807,8 +2701,6 @@ export class types {
     static type (name: 'java.rmi.server.ObjID', ...args: any[]): typeof classes.jrsObjID;
     static type (name: 'java.util.function.ObjIntConsumer', ...args: any[]): classes.jufObjIntConsumer;
     static type (name: 'java.util.function.ObjLongConsumer', ...args: any[]): classes.jufObjLongConsumer;
-    static type (name: 'java.util.Observable', ...args: any[]): typeof classes.juObservable;
-    static type (name: 'java.util.Observer', ...args: any[]): classes.juObserver;
     static type (name: 'javax.swing.plaf.metal.OceanTheme', ...args: any[]): typeof classes.jspmOceanTheme;
     static type (name: 'crypto.javax.xml.crypto.OctetStreamData', ...args: any[]): typeof classes.cjxcOctetStreamData;
     static type (name: 'java.time.OffsetDateTime', ...args: any[]): typeof classes.jtOffsetDateTime;
@@ -2835,7 +2727,6 @@ export class types {
     static type (name: 'java.awt.desktop.OpenURIHandler', ...args: any[]): classes.jadOpenURIHandler;
     static type (name: 'com.sun.management.OperatingSystemMXBean', ...args: any[]): classes.csmOperatingSystemMXBean;
     static type (name: 'java.lang.management.OperatingSystemMXBean', ...args: any[]): classes.jlmOperatingSystemMXBean;
-    static type (name: 'java.rmi.server.Operation', ...args: any[]): typeof classes.jrsOperation;
     static type (name: 'jdk.dynalink.Operation', ...args: any[]): classes.jdOperation;
     static type (name: 'javax.naming.OperationNotSupportedException', ...args: any[]): typeof classes.jnOperationNotSupportedException;
     static type (name: 'javax.management.OperationsException', ...args: any[]): typeof classes.jmOperationsException;
@@ -2855,12 +2746,7 @@ export class types {
     static type (name: 'java.io.OutputStreamWriter', ...args: any[]): typeof classes.jiOutputStreamWriter;
     static type (name: 'java.nio.channels.OverlappingFileLockException', ...args: any[]): typeof classes.jncOverlappingFileLockException;
     static type (name: 'javax.swing.OverlayLayout', ...args: any[]): typeof classes.jsOverlayLayout;
-    static type (name: 'java.security.acl.Owner', ...args: any[]): classes.jsaOwner;
-    static type (name: 'java.util.jar.Pack200', ...args: any[]): typeof classes.jujPack200;
-    static type (name: 'java.util.jar.Pack200.Packer', ...args: any[]): classes.jujPPacker;
-    static type (name: 'java.util.jar.Pack200.Unpacker', ...args: any[]): classes.jujPUnpacker;
     static type (name: 'java.lang.Package', ...args: any[]): typeof classes.jlPackage;
-    static type (name: 'com.sun.javadoc.PackageDoc', ...args: any[]): classes.csjPackageDoc;
     static type (name: 'javax.lang.model.element.PackageElement', ...args: any[]): classes.jlmePackageElement;
     static type (name: 'com.sun.source.tree.PackageTree', ...args: any[]): classes.csstPackageTree;
     static type (name: 'java.awt.image.PackedColorModel', ...args: any[]): typeof classes.jaiPackedColorModel;
@@ -2886,28 +2772,21 @@ export class types {
     static type (name: 'java.awt.print.Paper', ...args: any[]): typeof classes.japPaper;
     static type (name: 'javax.swing.text.html.ParagraphView', ...args: any[]): typeof classes.jsthParagraphView;
     static type (name: 'javax.swing.text.ParagraphView', ...args: any[]): typeof classes.jstParagraphView;
-    static type (name: 'com.sun.javadoc.Parameter', ...args: any[]): classes.csjParameter;
     static type (name: 'java.lang.reflect.Parameter', ...args: any[]): typeof classes.jlrParameter;
     static type (name: 'java.awt.image.renderable.ParameterBlock', ...args: any[]): typeof classes.jairParameterBlock;
     static type (name: 'java.beans.ParameterDescriptor', ...args: any[]): typeof classes.jbParameterDescriptor;
     static type (name: 'javax.lang.model.element.Parameterizable', ...args: any[]): classes.jlmeParameterizable;
-    static type (name: 'com.sun.javadoc.ParameterizedType', ...args: any[]): classes.csjParameterizedType;
     static type (name: 'java.lang.reflect.ParameterizedType', ...args: any[]): classes.jlrParameterizedType;
     static type (name: 'com.sun.source.tree.ParameterizedTypeTree', ...args: any[]): classes.csstParameterizedTypeTree;
     static type (name: 'java.sql.ParameterMetaData', ...args: any[]): classes.jsParameterMetaData;
-    static type (name: 'com.sun.javadoc.ParamTag', ...args: any[]): classes.csjParamTag;
     static type (name: 'com.sun.source.doctree.ParamTree', ...args: any[]): classes.cssdParamTree;
     static type (name: 'com.sun.source.tree.ParenthesizedTree', ...args: any[]): classes.csstParenthesizedTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ParenthesizedTree', ...args: any[]): classes.njnatParenthesizedTree;
     static type (name: 'java.text.ParseException', ...args: any[]): typeof classes.jtParseException;
     static type (name: 'java.text.ParsePosition', ...args: any[]): typeof classes.jtParsePosition;
     static type (name: 'javax.swing.text.html.parser.Parser', ...args: any[]): typeof classes.jsthpParser;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.Parser', ...args: any[]): classes.njnatParser;
-    static type (name: 'org.xml.sax.Parser', ...args: any[]): classes.oxsParser;
     static type (name: 'org.xml.sax.helpers.ParserAdapter', ...args: any[]): typeof classes.oxshParserAdapter;
     static type (name: 'javax.xml.parsers.ParserConfigurationException', ...args: any[]): typeof classes.jxpParserConfigurationException;
     static type (name: 'javax.swing.text.html.parser.ParserDelegator', ...args: any[]): typeof classes.jsthpParserDelegator;
-    static type (name: 'org.xml.sax.helpers.ParserFactory', ...args: any[]): typeof classes.oxshParserFactory;
     static type (name: 'javax.naming.PartialResultException', ...args: any[]): typeof classes.jnPartialResultException;
     static type (name: 'java.net.PasswordAuthentication', ...args: any[]): typeof classes.jnPasswordAuthentication;
     static type (name: 'javax.security.auth.callback.PasswordCallback', ...args: any[]): typeof classes.jsacPasswordCallback;
@@ -2930,7 +2809,6 @@ export class types {
     static type (name: 'com.sun.nio.sctp.PeerAddressChangeNotification', ...args: any[]): typeof classes.csnsPeerAddressChangeNotification;
     static type (name: 'com.sun.nio.sctp.PeerAddressChangeNotification.AddressChangeEvent', ...args: any[]): typeof classes.csnsPAddressChangeEvent;
     static type (name: 'java.time.Period', ...args: any[]): typeof classes.jtPeriod;
-    static type (name: 'java.security.acl.Permission', ...args: any[]): classes.jsaPermission;
     static type (name: 'java.security.Permission', ...args: any[]): typeof classes.jsPermission;
     static type (name: 'java.security.PermissionCollection', ...args: any[]): typeof classes.jsPermissionCollection;
     static type (name: 'java.security.Permissions', ...args: any[]): typeof classes.jsPermissions;
@@ -3075,7 +2953,6 @@ export class types {
     static type (name: 'org.w3c.dom.ProcessingInstruction', ...args: any[]): classes.owdProcessingInstruction;
     static type (name: 'javax.annotation.processing.Processor', ...args: any[]): classes.japProcessor;
     static type (name: 'java.awt.color.ProfileDataException', ...args: any[]): typeof classes.jacProfileDataException;
-    static type (name: 'com.sun.javadoc.ProgramElementDoc', ...args: any[]): classes.csjProgramElementDoc;
     static type (name: 'javax.swing.plaf.ProgressBarUI', ...args: any[]): typeof classes.jspProgressBarUI;
     static type (name: 'javax.swing.ProgressMonitor', ...args: any[]): typeof classes.jsProgressMonitor;
     static type (name: 'javax.swing.ProgressMonitorInputStream', ...args: any[]): typeof classes.jsProgressMonitorInputStream;
@@ -3090,7 +2967,6 @@ export class types {
     static type (name: 'java.beans.PropertyEditorSupport', ...args: any[]): typeof classes.jbPropertyEditorSupport;
     static type (name: 'java.util.PropertyPermission', ...args: any[]): typeof classes.juPropertyPermission;
     static type (name: 'java.util.PropertyResourceBundle', ...args: any[]): typeof classes.juPropertyResourceBundle;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.PropertyTree', ...args: any[]): classes.njnatPropertyTree;
     static type (name: 'java.beans.PropertyVetoException', ...args: any[]): typeof classes.jbPropertyVetoException;
     static type (name: 'java.security.ProtectionDomain', ...args: any[]): typeof classes.jsProtectionDomain;
     static type (name: 'java.net.ProtocolException', ...args: any[]): typeof classes.jnProtocolException;
@@ -3191,11 +3067,9 @@ export class types {
     static type (name: 'java.lang.reflect.ReflectPermission', ...args: any[]): typeof classes.jlrReflectPermission;
     static type (name: 'javax.security.auth.Refreshable', ...args: any[]): classes.jsaRefreshable;
     static type (name: 'javax.security.auth.RefreshFailedException', ...args: any[]): typeof classes.jsaRefreshFailedException;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.RegExpLiteralTree', ...args: any[]): classes.njnatRegExpLiteralTree;
     static type (name: 'javax.swing.plaf.synth.Region', ...args: any[]): typeof classes.jspsRegion;
     static type (name: 'javax.imageio.spi.RegisterableService', ...args: any[]): classes.jisRegisterableService;
     static type (name: 'java.rmi.registry.Registry', ...args: any[]): classes.jrrRegistry;
-    static type (name: 'java.rmi.registry.RegistryHandler', ...args: any[]): classes.jrrRegistryHandler;
     static type (name: 'java.util.concurrent.RejectedExecutionException', ...args: any[]): typeof classes.jucRejectedExecutionException;
     static type (name: 'java.util.concurrent.RejectedExecutionHandler', ...args: any[]): classes.jucRejectedExecutionHandler;
     static type (name: 'javax.management.relation.Relation', ...args: any[]): classes.jmrRelation;
@@ -3212,14 +3086,12 @@ export class types {
     static type (name: 'javax.management.relation.RelationTypeSupport', ...args: any[]): typeof classes.jmrRelationTypeSupport;
     static type (name: 'jdk.dynalink.RelinkableCallSite', ...args: any[]): classes.jdRelinkableCallSite;
     static type (name: 'java.rmi.Remote', ...args: any[]): classes.jrRemote;
-    static type (name: 'java.rmi.server.RemoteCall', ...args: any[]): classes.jrsRemoteCall;
     static type (name: 'java.rmi.RemoteException', ...args: any[]): typeof classes.jrRemoteException;
     static type (name: 'jdk.jshell.execution.RemoteExecutionControl', ...args: any[]): typeof classes.jjeRemoteExecutionControl;
     static type (name: 'java.rmi.server.RemoteObject', ...args: any[]): typeof classes.jrsRemoteObject;
     static type (name: 'java.rmi.server.RemoteObjectInvocationHandler', ...args: any[]): typeof classes.jrsRemoteObjectInvocationHandler;
     static type (name: 'java.rmi.server.RemoteRef', ...args: any[]): classes.jrsRemoteRef;
     static type (name: 'java.rmi.server.RemoteServer', ...args: any[]): typeof classes.jrsRemoteServer;
-    static type (name: 'java.rmi.server.RemoteStub', ...args: any[]): typeof classes.jrsRemoteStub;
     static type (name: 'java.awt.image.renderable.RenderableImage', ...args: any[]): classes.jairRenderableImage;
     static type (name: 'java.awt.image.renderable.RenderableImageOp', ...args: any[]): typeof classes.jairRenderableImageOp;
     static type (name: 'java.awt.image.renderable.RenderableImageProducer', ...args: any[]): typeof classes.jairRenderableImageProducer;
@@ -3255,7 +3127,6 @@ export class types {
     static type (name: 'crypto.javax.xml.crypto.dsig.keyinfo.RetrievalMethod', ...args: any[]): classes.cjxcdkRetrievalMethod;
     static type (name: 'com.sun.source.doctree.ReturnTree', ...args: any[]): classes.cssdReturnTree;
     static type (name: 'com.sun.source.tree.ReturnTree', ...args: any[]): classes.csstReturnTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ReturnTree', ...args: any[]): classes.njnatReturnTree;
     static type (name: 'javax.sound.sampled.ReverbType', ...args: any[]): typeof classes.jssReverbType;
     static type (name: 'dom.org.w3c.dom.css.RGBColor', ...args: any[]): classes.dowdcRGBColor;
     static type (name: 'java.awt.image.RGBImageFilter', ...args: any[]): typeof classes.jaiRGBImageFilter;
@@ -3268,10 +3139,7 @@ export class types {
     static type (name: 'rmi.javax.management.remote.rmi.RMIConnector', ...args: any[]): typeof classes.rjmrrRMIConnector;
     static type (name: 'rmi.javax.management.remote.rmi.RMIConnectorServer', ...args: any[]): typeof classes.rjmrrRMIConnectorServer;
     static type (name: 'java.rmi.server.RMIFailureHandler', ...args: any[]): classes.jrsRMIFailureHandler;
-    static type (name: 'rmi.javax.management.remote.rmi.RMIIIOPServerImpl', ...args: any[]): typeof classes.rjmrrRMIIIOPServerImpl;
     static type (name: 'rmi.javax.management.remote.rmi.RMIJRMPServerImpl', ...args: any[]): typeof classes.rjmrrRMIJRMPServerImpl;
-    static type (name: 'java.rmi.RMISecurityException', ...args: any[]): typeof classes.jrRMISecurityException;
-    static type (name: 'java.rmi.RMISecurityManager', ...args: any[]): typeof classes.jrRMISecurityManager;
     static type (name: 'rmi.javax.management.remote.rmi.RMIServer', ...args: any[]): classes.rjmrrRMIServer;
     static type (name: 'rmi.javax.management.remote.rmi.RMIServerImpl', ...args: any[]): typeof classes.rjmrrRMIServerImpl;
     static type (name: 'rmi.javax.management.remote.rmi.RMIServerImpl_Stub', ...args: any[]): typeof classes.rjmrrRMIServerImpl_Stub;
@@ -3287,7 +3155,6 @@ export class types {
     static type (name: 'javax.management.relation.RoleStatus', ...args: any[]): typeof classes.jmrRoleStatus;
     static type (name: 'javax.management.relation.RoleUnresolved', ...args: any[]): typeof classes.jmrRoleUnresolved;
     static type (name: 'javax.management.relation.RoleUnresolvedList', ...args: any[]): typeof classes.jmrRoleUnresolvedList;
-    static type (name: 'com.sun.javadoc.RootDoc', ...args: any[]): classes.csjRootDoc;
     static type (name: 'javax.swing.RootPaneContainer', ...args: any[]): classes.jsRootPaneContainer;
     static type (name: 'javax.swing.plaf.RootPaneUI', ...args: any[]): typeof classes.jspRootPaneUI;
     static type (name: 'javax.annotation.processing.RoundEnvironment', ...args: any[]): classes.japRoundEnvironment;
@@ -3376,8 +3243,6 @@ export class types {
     static type (name: 'javax.script.ScriptEngineFactory', ...args: any[]): classes.jsScriptEngineFactory;
     static type (name: 'javax.script.ScriptEngineManager', ...args: any[]): typeof classes.jsScriptEngineManager;
     static type (name: 'javax.script.ScriptException', ...args: any[]): typeof classes.jsScriptException;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.ScriptObjectMirror', ...args: any[]): typeof classes.njnasScriptObjectMirror;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.ScriptUtils', ...args: any[]): typeof classes.njnasScriptUtils;
     static type (name: 'javax.swing.Scrollable', ...args: any[]): classes.jsScrollable;
     static type (name: 'java.awt.Scrollbar', ...args: any[]): typeof classes.jaScrollbar;
     static type (name: 'javax.swing.plaf.ScrollBarUI', ...args: any[]): typeof classes.jspScrollBarUI;
@@ -3413,7 +3278,6 @@ export class types {
     static type (name: 'java.lang.SecurityManager', ...args: any[]): typeof classes.jlSecurityManager;
     static type (name: 'java.security.SecurityPermission', ...args: any[]): typeof classes.jsSecurityPermission;
     static type (name: 'java.nio.channels.SeekableByteChannel', ...args: any[]): classes.jncSeekableByteChannel;
-    static type (name: 'com.sun.javadoc.SeeTag', ...args: any[]): classes.csjSeeTag;
     static type (name: 'com.sun.source.doctree.SeeTree', ...args: any[]): classes.cssdSeeTree;
     static type (name: 'javax.swing.text.Segment', ...args: any[]): typeof classes.jstSegment;
     static type (name: 'java.nio.channels.SelectableChannel', ...args: any[]): typeof classes.jncSelectableChannel;
@@ -3433,7 +3297,6 @@ export class types {
     static type (name: 'rowset.javax.sql.rowset.serial.SerialDatalink', ...args: any[]): typeof classes.rjsrsSerialDatalink;
     static type (name: 'com.sun.source.doctree.SerialDataTree', ...args: any[]): classes.cssdSerialDataTree;
     static type (name: 'rowset.javax.sql.rowset.serial.SerialException', ...args: any[]): typeof classes.rjsrsSerialException;
-    static type (name: 'com.sun.javadoc.SerialFieldTag', ...args: any[]): classes.csjSerialFieldTag;
     static type (name: 'com.sun.source.doctree.SerialFieldTree', ...args: any[]): classes.cssdSerialFieldTree;
     static type (name: 'java.io.Serializable', ...args: any[]): classes.jiSerializable;
     static type (name: 'java.io.SerializablePermission', ...args: any[]): typeof classes.jiSerializablePermission;
@@ -3446,8 +3309,6 @@ export class types {
     static type (name: 'java.rmi.ServerError', ...args: any[]): typeof classes.jrServerError;
     static type (name: 'java.rmi.ServerException', ...args: any[]): typeof classes.jrServerException;
     static type (name: 'java.rmi.server.ServerNotActiveException', ...args: any[]): typeof classes.jrsServerNotActiveException;
-    static type (name: 'java.rmi.server.ServerRef', ...args: any[]): classes.jrsServerRef;
-    static type (name: 'java.rmi.ServerRuntimeException', ...args: any[]): typeof classes.jrServerRuntimeException;
     static type (name: 'java.net.ServerSocket', ...args: any[]): typeof classes.jnServerSocket;
     static type (name: 'java.nio.channels.ServerSocketChannel', ...args: any[]): typeof classes.jncServerSocketChannel;
     static type (name: 'javax.net.ServerSocketFactory', ...args: any[]): typeof classes.jnServerSocketFactory;
@@ -3491,7 +3352,6 @@ export class types {
     static type (name: 'java.security.SignatureSpi', ...args: any[]): typeof classes.jsSignatureSpi;
     static type (name: 'crypto.javax.xml.crypto.dsig.SignedInfo', ...args: any[]): classes.cjxcdSignedInfo;
     static type (name: 'java.security.SignedObject', ...args: any[]): typeof classes.jsSignedObject;
-    static type (name: 'java.security.Signer', ...args: any[]): typeof classes.jsSigner;
     static type (name: 'java.time.format.SignStyle', ...args: any[]): typeof classes.jtfSignStyle;
     static type (name: 'javax.lang.model.util.SimpleAnnotationValueVisitor6', ...args: any[]): typeof classes.jlmuSimpleAnnotationValueVisitor6;
     static type (name: 'javax.lang.model.util.SimpleAnnotationValueVisitor7', ...args: any[]): typeof classes.jlmuSimpleAnnotationValueVisitor7;
@@ -3515,8 +3375,6 @@ export class types {
     static type (name: 'javax.script.SimpleScriptContext', ...args: any[]): typeof classes.jsSimpleScriptContext;
     static type (name: 'java.util.SimpleTimeZone', ...args: any[]): typeof classes.juSimpleTimeZone;
     static type (name: 'com.sun.source.util.SimpleTreeVisitor', ...args: any[]): typeof classes.cssuSimpleTreeVisitor;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.SimpleTreeVisitorES5_1', ...args: any[]): typeof classes.njnatSimpleTreeVisitorES5_1;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.SimpleTreeVisitorES6', ...args: any[]): typeof classes.njnatSimpleTreeVisitorES6;
     static type (name: 'javax.management.openmbean.SimpleType', ...args: any[]): typeof classes.jmoSimpleType;
     static type (name: 'javax.lang.model.util.SimpleTypeVisitor6', ...args: any[]): typeof classes.jlmuSimpleTypeVisitor6;
     static type (name: 'javax.lang.model.util.SimpleTypeVisitor7', ...args: any[]): typeof classes.jlmuSimpleTypeVisitor7;
@@ -3529,9 +3387,6 @@ export class types {
     static type (name: 'javax.naming.SizeLimitExceededException', ...args: any[]): typeof classes.jnSizeLimitExceededException;
     static type (name: 'javax.swing.SizeRequirements', ...args: any[]): typeof classes.jsSizeRequirements;
     static type (name: 'javax.swing.SizeSequence', ...args: any[]): typeof classes.jsSizeSequence;
-    static type (name: 'java.rmi.server.Skeleton', ...args: any[]): classes.jrsSkeleton;
-    static type (name: 'java.rmi.server.SkeletonMismatchException', ...args: any[]): typeof classes.jrsSkeletonMismatchException;
-    static type (name: 'java.rmi.server.SkeletonNotFoundException', ...args: any[]): typeof classes.jrsSkeletonNotFoundException;
     static type (name: 'javax.swing.plaf.SliderUI', ...args: any[]): typeof classes.jspSliderUI;
     static type (name: 'javax.net.ssl.SNIHostName', ...args: any[]): typeof classes.jnsSNIHostName;
     static type (name: 'javax.net.ssl.SNIMatcher', ...args: any[]): typeof classes.jnsSNIMatcher;
@@ -3555,7 +3410,6 @@ export class types {
     static type (name: 'java.net.SocketOptions', ...args: any[]): classes.jnSocketOptions;
     static type (name: 'java.net.SocketPermission', ...args: any[]): typeof classes.jnSocketPermission;
     static type (name: 'jdk.net.Sockets', ...args: any[]): typeof classes.jnSockets;
-    static type (name: 'java.rmi.server.SocketSecurityException', ...args: any[]): typeof classes.jrsSocketSecurityException;
     static type (name: 'java.net.SocketTimeoutException', ...args: any[]): typeof classes.jnSocketTimeoutException;
     static type (name: 'javax.swing.border.SoftBevelBorder', ...args: any[]): typeof classes.jsbSoftBevelBorder;
     static type (name: 'java.lang.ref.SoftReference', ...args: any[]): typeof classes.jlrSoftReference;
@@ -3579,7 +3433,6 @@ export class types {
     static type (name: 'jdk.jshell.SourceCodeAnalysis.Suggestion', ...args: any[]): classes.jjSSuggestion;
     static type (name: 'javax.sound.sampled.SourceDataLine', ...args: any[]): classes.jssSourceDataLine;
     static type (name: 'javax.xml.transform.SourceLocator', ...args: any[]): classes.jxtSourceLocator;
-    static type (name: 'com.sun.javadoc.SourcePosition', ...args: any[]): classes.csjSourcePosition;
     static type (name: 'com.sun.source.util.SourcePositions', ...args: any[]): classes.cssuSourcePositions;
     static type (name: 'javax.lang.model.SourceVersion', ...args: any[]): typeof classes.jlmSourceVersion;
     static type (name: 'javax.swing.SpinnerDateModel', ...args: any[]): typeof classes.jsSpinnerDateModel;
@@ -3601,7 +3454,6 @@ export class types {
     static type (name: 'java.util.Spliterators.AbstractSpliterator', ...args: any[]): typeof classes.juSAbstractSpliterator;
     static type (name: 'javax.swing.plaf.SplitPaneUI', ...args: any[]): typeof classes.jspSplitPaneUI;
     static type (name: 'java.util.SplittableRandom', ...args: any[]): typeof classes.juSplittableRandom;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.SpreadTree', ...args: any[]): classes.njnatSpreadTree;
     static type (name: 'javax.swing.Spring', ...args: any[]): typeof classes.jsSpring;
     static type (name: 'javax.swing.SpringLayout', ...args: any[]): typeof classes.jsSpringLayout;
     static type (name: 'javax.swing.SpringLayout.Constraints', ...args: any[]): typeof classes.jsSConstraints;
@@ -3689,7 +3541,6 @@ export class types {
     static type (name: 'javax.sql.StatementEventListener', ...args: any[]): classes.jsStatementEventListener;
     static type (name: 'jdk.jshell.StatementSnippet', ...args: any[]): typeof classes.jjStatementSnippet;
     static type (name: 'com.sun.source.tree.StatementTree', ...args: any[]): classes.csstStatementTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.StatementTree', ...args: any[]): classes.njnatStatementTree;
     static type (name: 'jdk.dynalink.beans.StaticClass', ...args: any[]): typeof classes.jdbStaticClass;
     static type (name: 'javax.xml.transform.stax.StAXResult', ...args: any[]): typeof classes.jxtsStAXResult;
     static type (name: 'javax.xml.transform.stax.StAXSource', ...args: any[]): typeof classes.jxtsStAXSource;
@@ -3711,7 +3562,6 @@ export class types {
     static type (name: 'java.lang.StrictMath', ...args: any[]): typeof classes.jlStrictMath;
     static type (name: 'java.lang.String', ...args: any[]): typeof classes.jlString;
     static type (name: 'java.lang.StringBuffer', ...args: any[]): typeof classes.jlStringBuffer;
-    static type (name: 'java.io.StringBufferInputStream', ...args: any[]): typeof classes.jiStringBufferInputStream;
     static type (name: 'java.lang.StringBuilder', ...args: any[]): typeof classes.jlStringBuilder;
     static type (name: 'java.text.StringCharacterIterator', ...args: any[]): typeof classes.jtStringCharacterIterator;
     static type (name: 'java.lang.invoke.StringConcatException', ...args: any[]): typeof classes.jliStringConcatException;
@@ -3769,7 +3619,6 @@ export class types {
     static type (name: 'javax.swing.SwingWorker.StateValue', ...args: any[]): typeof classes.jsSStateValue;
     static type (name: 'java.lang.invoke.SwitchPoint', ...args: any[]): typeof classes.jliSwitchPoint;
     static type (name: 'com.sun.source.tree.SwitchTree', ...args: any[]): classes.csstSwitchTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.SwitchTree', ...args: any[]): classes.njnatSwitchTree;
     static type (name: 'rowset.javax.sql.rowset.spi.SyncFactory', ...args: any[]): typeof classes.rjsrsSyncFactory;
     static type (name: 'rowset.javax.sql.rowset.spi.SyncFactoryException', ...args: any[]): typeof classes.rjsrsSyncFactoryException;
     static type (name: 'java.io.SyncFailedException', ...args: any[]): typeof classes.jiSyncFailedException;
@@ -3861,7 +3710,6 @@ export class types {
     static type (name: 'javax.management.openmbean.TabularData', ...args: any[]): classes.jmoTabularData;
     static type (name: 'javax.management.openmbean.TabularDataSupport', ...args: any[]): typeof classes.jmoTabularDataSupport;
     static type (name: 'javax.management.openmbean.TabularType', ...args: any[]): typeof classes.jmoTabularType;
-    static type (name: 'com.sun.javadoc.Tag', ...args: any[]): classes.csjTag;
     static type (name: 'javax.swing.text.html.parser.TagElement', ...args: any[]): typeof classes.jsthpTagElement;
     static type (name: 'jdk.javadoc.doclet.Taglet', ...args: any[]): classes.jjdTaglet;
     static type (name: 'jdk.javadoc.doclet.Taglet.Location', ...args: any[]): typeof classes.jjdTLocation;
@@ -3873,7 +3721,6 @@ export class types {
     static type (name: 'com.sun.source.util.TaskEvent', ...args: any[]): typeof classes.cssuTaskEvent;
     static type (name: 'com.sun.source.util.TaskEvent.Kind', ...args: any[]): typeof classes.cssuTKind;
     static type (name: 'com.sun.source.util.TaskListener', ...args: any[]): classes.cssuTaskListener;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.TemplateLiteralTree', ...args: any[]): classes.njnatTemplateLiteralTree;
     static type (name: 'javax.xml.transform.Templates', ...args: any[]): classes.jxtTemplates;
     static type (name: 'javax.xml.transform.sax.TemplatesHandler', ...args: any[]): classes.jxtsTemplatesHandler;
     static type (name: 'java.time.temporal.Temporal', ...args: any[]): classes.jttTemporal;
@@ -3933,10 +3780,8 @@ export class types {
     static type (name: 'com.sun.jdi.event.ThreadStartEvent', ...args: any[]): classes.csjeThreadStartEvent;
     static type (name: 'com.sun.jdi.request.ThreadStartRequest', ...args: any[]): classes.csjrThreadStartRequest;
     static type (name: 'java.lang.Throwable', ...args: any[]): typeof classes.jlThrowable;
-    static type (name: 'com.sun.javadoc.ThrowsTag', ...args: any[]): classes.csjThrowsTag;
     static type (name: 'com.sun.source.doctree.ThrowsTree', ...args: any[]): classes.cssdThrowsTree;
     static type (name: 'com.sun.source.tree.ThrowTree', ...args: any[]): classes.csstThrowTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.ThrowTree', ...args: any[]): classes.njnatThrowTree;
     static type (name: 'javax.imageio.plugins.tiff.TIFFDirectory', ...args: any[]): typeof classes.jiptTIFFDirectory;
     static type (name: 'javax.imageio.plugins.tiff.TIFFField', ...args: any[]): typeof classes.jiptTIFFField;
     static type (name: 'javax.imageio.plugins.tiff.TIFFImageReadParam', ...args: any[]): typeof classes.jiptTIFFImageReadParam;
@@ -4002,9 +3847,7 @@ export class types {
     static type (name: 'java.awt.TrayIcon', ...args: any[]): typeof classes.jaTrayIcon;
     static type (name: 'java.awt.TrayIcon.MessageType', ...args: any[]): typeof classes.jaTMessageType;
     static type (name: 'com.sun.source.tree.Tree', ...args: any[]): classes.csstTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.Tree', ...args: any[]): classes.njnatTree;
     static type (name: 'com.sun.source.tree.Tree.Kind', ...args: any[]): typeof classes.csstTKind;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.Tree.Kind', ...args: any[]): typeof classes.njnatTKind;
     static type (name: 'javax.swing.tree.TreeCellEditor', ...args: any[]): classes.jstTreeCellEditor;
     static type (name: 'javax.swing.tree.TreeCellRenderer', ...args: any[]): classes.jstTreeCellRenderer;
     static type (name: 'javax.swing.event.TreeExpansionEvent', ...args: any[]): typeof classes.jseTreeExpansionEvent;
@@ -4025,7 +3868,6 @@ export class types {
     static type (name: 'java.util.TreeSet', ...args: any[]): typeof classes.juTreeSet;
     static type (name: 'javax.swing.plaf.TreeUI', ...args: any[]): typeof classes.jspTreeUI;
     static type (name: 'com.sun.source.tree.TreeVisitor', ...args: any[]): classes.csstTreeVisitor;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.TreeVisitor', ...args: any[]): classes.njnatTreeVisitor;
     static type (name: 'org.w3c.dom.traversal.TreeWalker', ...args: any[]): classes.owdtTreeWalker;
     static type (name: 'javax.swing.event.TreeWillExpandListener', ...args: any[]): classes.jseTreeWillExpandListener;
     static type (name: 'java.security.cert.TrustAnchor', ...args: any[]): typeof classes.jscTrustAnchor;
@@ -4033,8 +3875,6 @@ export class types {
     static type (name: 'javax.net.ssl.TrustManagerFactory', ...args: any[]): typeof classes.jnsTrustManagerFactory;
     static type (name: 'javax.net.ssl.TrustManagerFactorySpi', ...args: any[]): typeof classes.jnsTrustManagerFactorySpi;
     static type (name: 'com.sun.source.tree.TryTree', ...args: any[]): classes.csstTryTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.TryTree', ...args: any[]): classes.njnatTryTree;
-    static type (name: 'com.sun.javadoc.Type', ...args: any[]): classes.csjType;
     static type (name: 'com.sun.jdi.Type', ...args: any[]): classes.csjType;
     static type (name: 'java.lang.reflect.Type', ...args: any[]): classes.jlrType;
     static type (name: 'jdk.dynalink.linker.TypeBasedGuardingDynamicLinker', ...args: any[]): classes.jdlTypeBasedGuardingDynamicLinker;
@@ -4056,7 +3896,6 @@ export class types {
     static type (name: 'java.sql.Types', ...args: any[]): typeof classes.jsTypes;
     static type (name: 'javax.lang.model.util.Types', ...args: any[]): classes.jlmuTypes;
     static type (name: 'jdk.dynalink.linker.support.TypeUtilities', ...args: any[]): typeof classes.jdlsTypeUtilities;
-    static type (name: 'com.sun.javadoc.TypeVariable', ...args: any[]): classes.csjTypeVariable;
     static type (name: 'java.lang.reflect.TypeVariable', ...args: any[]): classes.jlrTypeVariable;
     static type (name: 'javax.lang.model.type.TypeVariable', ...args: any[]): classes.jlmtTypeVariable;
     static type (name: 'javax.lang.model.type.TypeVisitor', ...args: any[]): classes.jlmtTypeVisitor;
@@ -4073,7 +3912,6 @@ export class types {
     static type (name: 'javax.swing.plaf.UIResource', ...args: any[]): classes.jspUIResource;
     static type (name: 'java.util.function.UnaryOperator', ...args: any[]): classes.jufUnaryOperator;
     static type (name: 'com.sun.source.tree.UnaryTree', ...args: any[]): classes.csstUnaryTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.UnaryTree', ...args: any[]): classes.njnatUnaryTree;
     static type (name: 'java.io.UncheckedIOException', ...args: any[]): typeof classes.jiUncheckedIOException;
     static type (name: 'java.lang.reflect.UndeclaredThrowableException', ...args: any[]): typeof classes.jlrUndeclaredThrowableException;
     static type (name: 'javax.swing.undo.UndoableEdit', ...args: any[]): classes.jsuUndoableEdit;
@@ -4105,7 +3943,6 @@ export class types {
     static type (name: 'com.sun.source.doctree.UnknownInlineTagTree', ...args: any[]): classes.cssdUnknownInlineTagTree;
     static type (name: 'java.rmi.activation.UnknownObjectException', ...args: any[]): typeof classes.jraUnknownObjectException;
     static type (name: 'java.net.UnknownServiceException', ...args: any[]): typeof classes.jnUnknownServiceException;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.UnknownTreeException', ...args: any[]): typeof classes.njnatUnknownTreeException;
     static type (name: 'javax.lang.model.type.UnknownTypeException', ...args: any[]): typeof classes.jlmtUnknownTypeException;
     static type (name: 'java.nio.charset.UnmappableCharacterException', ...args: any[]): typeof classes.jncUnmappableCharacterException;
     static type (name: 'java.rmi.UnmarshalException', ...args: any[]): typeof classes.jrUnmarshalException;
@@ -4148,7 +3985,6 @@ export class types {
     static type (name: 'java.net.URLDecoder', ...args: any[]): typeof classes.jnURLDecoder;
     static type (name: 'java.net.URLEncoder', ...args: any[]): typeof classes.jnURLEncoder;
     static type (name: 'java.net.URLPermission', ...args: any[]): typeof classes.jnURLPermission;
-    static type (name: 'nashorn.jdk.nashorn.api.scripting.URLReader', ...args: any[]): typeof classes.njnasURLReader;
     static type (name: 'java.net.URLStreamHandler', ...args: any[]): typeof classes.jnURLStreamHandler;
     static type (name: 'java.net.URLStreamHandlerFactory', ...args: any[]): classes.jnURLStreamHandlerFactory;
     static type (name: 'java.net.spi.URLStreamHandlerProvider', ...args: any[]): typeof classes.jnsURLStreamHandlerProvider;
@@ -4179,7 +4015,6 @@ export class types {
     static type (name: 'javax.lang.model.element.VariableElement', ...args: any[]): classes.jlmeVariableElement;
     static type (name: 'javax.swing.tree.VariableHeightLayoutCache', ...args: any[]): typeof classes.jstVariableHeightLayoutCache;
     static type (name: 'com.sun.source.tree.VariableTree', ...args: any[]): classes.csstVariableTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.VariableTree', ...args: any[]): classes.njnatVariableTree;
     static type (name: 'jdk.jshell.VarSnippet', ...args: any[]): typeof classes.jjVarSnippet;
     static type (name: 'java.util.Vector', ...args: any[]): typeof classes.juVector;
     static type (name: 'java.lang.VerifyError', ...args: any[]): typeof classes.jlVerifyError;
@@ -4233,9 +4068,7 @@ export class types {
     static type (name: 'http.java.net.http.WebSocketHandshakeException', ...args: any[]): typeof classes.hjnhWebSocketHandshakeException;
     static type (name: 'java.time.temporal.WeekFields', ...args: any[]): typeof classes.jttWeekFields;
     static type (name: 'com.sun.source.tree.WhileLoopTree', ...args: any[]): classes.csstWhileLoopTree;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.WhileLoopTree', ...args: any[]): classes.njnatWhileLoopTree;
     static type (name: 'com.sun.source.tree.WildcardTree', ...args: any[]): classes.csstWildcardTree;
-    static type (name: 'com.sun.javadoc.WildcardType', ...args: any[]): classes.csjWildcardType;
     static type (name: 'java.lang.reflect.WildcardType', ...args: any[]): classes.jlrWildcardType;
     static type (name: 'javax.lang.model.type.WildcardType', ...args: any[]): classes.jlmtWildcardType;
     static type (name: 'java.awt.Window', ...args: any[]): typeof classes.jaWindow;
@@ -4246,7 +4079,6 @@ export class types {
     static type (name: 'java.awt.event.WindowFocusListener', ...args: any[]): classes.jaeWindowFocusListener;
     static type (name: 'java.awt.event.WindowListener', ...args: any[]): classes.jaeWindowListener;
     static type (name: 'java.awt.event.WindowStateListener', ...args: any[]): classes.jaeWindowStateListener;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.WithTree', ...args: any[]): classes.njnatWithTree;
     static type (name: 'javax.swing.text.WrappedPlainView', ...args: any[]): typeof classes.jstWrappedPlainView;
     static type (name: 'java.sql.Wrapper', ...args: any[]): classes.jsWrapper;
     static type (name: 'java.nio.channels.WritableByteChannel', ...args: any[]): classes.jncWritableByteChannel;
@@ -4259,7 +4091,6 @@ export class types {
     static type (name: 'javax.security.auth.x500.X500Principal', ...args: any[]): typeof classes.jsaxX500Principal;
     static type (name: 'javax.security.auth.x500.X500PrivateCredential', ...args: any[]): typeof classes.jsaxX500PrivateCredential;
     static type (name: 'java.security.cert.X509Certificate', ...args: any[]): typeof classes.jscX509Certificate;
-    static type (name: 'javax.security.cert.X509Certificate', ...args: any[]): typeof classes.jscX509Certificate;
     static type (name: 'java.security.cert.X509CertSelector', ...args: any[]): typeof classes.jscX509CertSelector;
     static type (name: 'java.security.cert.X509CRL', ...args: any[]): typeof classes.jscX509CRL;
     static type (name: 'java.security.cert.X509CRLEntry', ...args: any[]): typeof classes.jscX509CRLEntry;
@@ -4304,7 +4135,6 @@ export class types {
     static type (name: 'rowset.javax.sql.rowset.spi.XmlReader', ...args: any[]): classes.rjsrsXmlReader;
     static type (name: 'org.xml.sax.XMLReader', ...args: any[]): classes.oxsXMLReader;
     static type (name: 'org.xml.sax.helpers.XMLReaderAdapter', ...args: any[]): typeof classes.oxshXMLReaderAdapter;
-    static type (name: 'org.xml.sax.helpers.XMLReaderFactory', ...args: any[]): typeof classes.oxshXMLReaderFactory;
     static type (name: 'javax.xml.stream.XMLReporter', ...args: any[]): classes.jxsXMLReporter;
     static type (name: 'javax.xml.stream.XMLResolver', ...args: any[]): classes.jxsXMLResolver;
     static type (name: 'crypto.javax.xml.crypto.dsig.XMLSignature', ...args: any[]): classes.cjxcdXMLSignature;
@@ -4346,7 +4176,6 @@ export class types {
     static type (name: 'crypto.javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec', ...args: any[]): typeof classes.cjxcdsXSLTTransformParameterSpec;
     static type (name: 'java.time.Year', ...args: any[]): typeof classes.jtYear;
     static type (name: 'java.time.YearMonth', ...args: any[]): typeof classes.jtYearMonth;
-    static type (name: 'nashorn.jdk.nashorn.api.tree.YieldTree', ...args: any[]): classes.njnatYieldTree;
     static type (name: 'java.util.zip.ZipEntry', ...args: any[]): typeof classes.juzZipEntry;
     static type (name: 'java.util.zip.ZipError', ...args: any[]): typeof classes.juzZipError;
     static type (name: 'java.util.zip.ZipException', ...args: any[]): typeof classes.juzZipException;

@@ -137,10 +137,6 @@ export class events {
         ...listeners: ((event: classes.csjeEvent) => {})[]
     ): void;
     static event (
-        name: 'java.awt.Event',
-        ...listeners: ((event: classes.jaEvent) => {})[]
-    ): void;
-    static event (
         name: 'jdk.jfr.Event',
         ...listeners: ((event: classes.jjEvent) => {})[]
     ): void;
